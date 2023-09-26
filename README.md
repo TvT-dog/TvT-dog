@@ -1,8 +1,8 @@
 
-#  🙋 Hello
+
 <!-- About me 关于我 -->
 
-### 🤺 About Me
+### About Me
 
 <img align="right" width="88" src="https://avatars.githubusercontent.com/u/92008919?s=400&u=ce20e4f85d5436a740af1e161d634e1301b192b2&v=4" />
 
@@ -15,7 +15,7 @@
 <tr>
 <td>
 
-### 🏢 Work Experience
+###  Work Experience
 
 <img align="right" width="88" src="https://career.uic.edu.cn/attachment/uic/avatar/2022/1014/6348faba80fd98.72710830.jpg?t=1669186053" />
 
@@ -31,7 +31,7 @@
 
 <!-- 近期博客 -->
 
-### 📃 Recent Blog
+### Recent Blog
 
 <img align="right" width="88" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/astronaut.png" />
 
