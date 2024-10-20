@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "c54fb056fdb0f165",
+    "id": "214a94f87edd98fe",
     "type": "split",
     "children": [
       {
-        "id": "47db5145e32f730d",
+        "id": "b03d9397b589cd82",
         "type": "tabs",
         "children": [
           {
-            "id": "313f6db632210dc4",
+            "id": "ffe6c945bdd15e7d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "src/开发/Protobuf.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Protobuf"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "26545f8b63b5e060",
+    "id": "3242f16e47802075",
     "type": "split",
     "children": [
       {
-        "id": "5ff12eecf7dc5b15",
+        "id": "01100eeac04526ee",
         "type": "tabs",
         "children": [
           {
-            "id": "f7f216ae1eb4850e",
+            "id": "03eb9d55f37409d6",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +47,7 @@
             }
           },
           {
-            "id": "2f458e0caf4f3132",
+            "id": "cab91ae1bb6b44fb",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -60,7 +64,7 @@
             }
           },
           {
-            "id": "c2f437e131e8a27d",
+            "id": "792dfbb4e503aa82",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -76,19 +80,20 @@
     "width": 300
   },
   "right": {
-    "id": "26b9b105ecba38eb",
+    "id": "f344dcc4415d757c",
     "type": "split",
     "children": [
       {
-        "id": "05c0b5fbffaf7baa",
+        "id": "9a3c69e4e11379a7",
         "type": "tabs",
         "children": [
           {
-            "id": "70a0f520d932a974",
+            "id": "f778cd2df7473b6a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "src/开发/Protobuf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,24 +103,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "Protobuf 的反向链接列表"
             }
           },
           {
-            "id": "3e2d0ca6149e9743",
+            "id": "c04ac48ef777099b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "src/开发/Protobuf.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "Protobuf 的出链列表"
             }
           },
           {
-            "id": "638a35f30e3a7544",
+            "id": "00c3a04238f0d0bc",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -128,21 +134,33 @@
             }
           },
           {
-            "id": "e3441b13584254e4",
+            "id": "4d03e90f070a268a",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "src/开发/Protobuf.md"
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Protobuf 的大纲"
+            }
+          },
+          {
+            "id": "e0442e5925f37990",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -151,9 +169,13 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "313f6db632210dc4",
-  "lastOpenFiles": []
+  "active": "ffe6c945bdd15e7d",
+  "lastOpenFiles": [
+    "src/开发/Nginx.md",
+    "src/开发/开发.md"
+  ]
 }
