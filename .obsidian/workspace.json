@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/开发/Nginx.md",
+                "file": "src/开发/ACM/数学概念.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nginx"
+              "title": "数学概念"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/开发/Nginx.md"
+                "file": "src/开发/ACM/数学概念.md"
               },
               "icon": "lucide-list",
-              "title": "Nginx 的大纲"
+              "title": "数学概念 的大纲"
             }
           },
           {
@@ -173,10 +173,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c0b5f7542206f27a",
+  "active": "03eb9d55f37409d6",
   "lastOpenFiles": [
-    "src/开发/测试.md",
+    "src/开发/ACM/常用逻辑.md",
     "src/开发/Nginx.md",
+    "src/开发/测试.md",
     "src/开发/开发.md",
     "src/开发/Protobuf.md"
   ]
