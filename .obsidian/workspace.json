@@ -11,14 +11,12 @@
             "id": "fa6afe1c7f2b421a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "src/开发/Java开发/请求处理.md",
-                "mode": "source",
-                "source": false
+                "file": "src/images/my-logo.png"
               },
-              "icon": "lucide-file",
-              "title": "请求处理"
+              "icon": "lucide-image",
+              "title": "my-logo"
             }
           }
         ]
@@ -175,9 +173,9 @@
   },
   "active": "fa6afe1c7f2b421a",
   "lastOpenFiles": [
+    "src/开发/Java开发/请求处理.md",
     "src/开发/开发.md",
     "src/开发/一分钱不花,炫酷博客带回家.md",
-    "src/开发/Java开发/请求处理.md",
     "src/开发/ACM/数学概念.md",
     "src/开发/ACM/常用逻辑.md",
     "src/开发/Nginx.md",
