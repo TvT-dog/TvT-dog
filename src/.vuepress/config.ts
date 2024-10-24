@@ -10,6 +10,20 @@ export default defineUserConfig({
   description: "如题所示一个知识库",
 
   theme,
+  head: [
+
+    // 导入一个外部脚本
+    ["script", { src: "YOUR_SCRIPT_LINK" }],
+    // 添加一段脚本
+    [
+      "script",
+      {},
+      `\
+        // your script here
+      `,
+    ],
+    
+  ],
 
   // 和 PWA 一起启用
   // shouldPrefetch: false,
