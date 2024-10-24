@@ -11,7 +11,9 @@ export default defineUserConfig({
 
   theme,
   
-
+  head: [
+    ['meta', { name: 'referer', content: 'no-referer' }]
+],
   // 和 PWA 一起启用
   // shouldPrefetch: false,
 });
