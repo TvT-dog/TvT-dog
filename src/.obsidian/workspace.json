@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发/Java开发/请求处理.md",
+                "file": "开发/有意思的文章/一分钱不花,炫酷博客带回家.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "请求处理"
+              "title": "一分钱不花,炫酷博客带回家"
             }
           }
         ]
@@ -174,7 +174,8 @@
   },
   "active": "313f6db632210dc4",
   "lastOpenFiles": [
-    "README.md",
-    "开发/Java开发/请求处理.md"
+    "开发/Java开发/请求处理.md",
+    "开发/有意思的文章",
+    "README.md"
   ]
 }
