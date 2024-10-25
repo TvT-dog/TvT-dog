@@ -8,7 +8,7 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "Ho1d_F0rward的知识库",
   description: "如题所示一个知识库",
-
+  public:"/images/",
   theme,
   
   head: [
