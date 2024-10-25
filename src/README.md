@@ -8,7 +8,7 @@ icon: home
 ::: center
 
 
-![](/src/images/my-logo.png =256x256)
+![](/images/my-logo.png =256x256)
 
 <!-- markdownlint-restore -->
 :::
