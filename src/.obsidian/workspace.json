@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "开发/SQL学习/SQL进阶查询.md",
+                "file": "渗透/外网打点/Sql注入/sql注入初识.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL进阶查询"
+              "title": "sql注入初识"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发/SQL学习/SQL进阶查询.md",
+                "file": "渗透/外网打点/Sql注入/sql注入初识.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "SQL进阶查询 的反向链接列表"
+              "title": "sql注入初识 的反向链接列表"
             }
           },
           {
@@ -138,10 +138,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "开发/SQL学习/SQL进阶查询.md"
+                "file": "渗透/外网打点/Sql注入/sql注入初识.md"
               },
               "icon": "lucide-list",
-              "title": "SQL进阶查询 的大纲"
+              "title": "sql注入初识 的大纲"
             }
           },
           {
@@ -155,7 +155,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -172,8 +172,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "313f6db632210dc4",
+  "active": "c237b38b2afb55a6",
   "lastOpenFiles": [
+    "开发/SQL学习/SQL进阶查询.md",
+    "渗透/外网打点/Sql注入",
+    "渗透/外网打点/Sql注入/sql注入初识.md",
+    "渗透/外网打点",
+    "渗透/未命名",
+    "渗透",
+    "未命名",
     "开发/有意思的文章/一分钱不花,炫酷博客带回家.md",
     "开发/Java开发/请求处理.md",
     "开发/有意思的文章",
