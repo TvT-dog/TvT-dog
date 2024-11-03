@@ -2,6 +2,7 @@
 data: 2024-11-02
 关联:
   - "[[book/知识笔记/CTF/JAVA/JAVA|JAVA]]"
+title: Think_java题解
 ---
 ## 题目地址
 https://www.ctfhub.com/#/challenge
