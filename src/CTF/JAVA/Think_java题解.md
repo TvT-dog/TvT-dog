@@ -6,13 +6,20 @@ title: Think_java题解
 https://www.ctfhub.com/#/challenge
 搜索Think_java即可
 ## 题解正文
-先看附件
+先看看附件是什么样的
+
 ![](/images/5a4fc6291cf00789b48ade274754f388.png)这里看到有一个sql接口，我们看看有没有什么操控空间。
 我们发现cn.abc.core.sqldict.SqlDict#getTableData中是直接对dbName进行的一个拼接，我们试试是否可以进行sql注入。
+
 ![](/images/3d8d019daa1221add28c7d1548c8508d.png)
+
 简单尝试了下，发现好像不行。
+
 ![](/images/be3dbf2f25581b9e3015ed6bb001b73e.png)
-在研究一下代码，发现前面进行了数据连接操作![](/images/43619dae6bb1f62f0b24da94b726f31f.png)
+
+在研究一下代码，发现前面进行了数据连接操作
+
+![](/images/43619dae6bb1f62f0b24da94b726f31f.png)
 我们格式要符合jdbcurl格式，且可以进行sql注入。
 最后我们构造出
 ```
