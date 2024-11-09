@@ -70,6 +70,36 @@ http {
 
 ```
 
+### 反向代理
+```
+http {
+    server {
+        listen 80;
+        server_name api.example.com;
+
+        location / {            用于匹配特定的请求 URI，并定义这些请求的处理方式。
+            proxy_pass http://backend_api_server;   Nginx 将请求转发到的目标服务器地址，即 http://backend_static_server。
+            proxy_set_header Host $host;   请求头通常包含原始请求中的主机名（即客户端请求的目标域名）。
+            proxy_set_header X-Real-IP $remote_addr;    请求头用于添加客户端 IP 地址到一个链中，这个链包含了客户端到 Nginx 之间所有代理的 IP 地址。
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;  是 Nginx 内置变量，它自动将客户端 IP 地址添加到现有的 X-Forwarded-For 头中，如果请求中已经存在这个头，则追加客户端 IP 地址。确保后端服务器能够接收到完整的客户端 IP 地址链
+        }
+    }
+
+    server {
+        listen 80;
+        server_name static.example.com;
+
+        location / {
+            proxy_pass http://backend_static_server;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        }
+    }
+}
+```
+
+
 
 ## 参考链接
 https://javabetter.cn/nginx/nginx.html
