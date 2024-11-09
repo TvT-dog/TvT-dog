@@ -20,6 +20,34 @@
               "icon": "lucide-file",
               "title": "SSRF漏洞初识"
             }
+          },
+          {
+            "id": "38b309263bfb37cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "images/Pasted.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Pasted"
+            }
+          },
+          {
+            "id": "03c4c3bcc2c34a69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF/JAVA/Think_java题解.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Think_java题解"
+            }
           }
         ]
       }
@@ -77,7 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 369.5
   },
   "right": {
     "id": "26b9b105ecba38eb",
@@ -175,17 +203,18 @@
   },
   "active": "398701fd9e089446",
   "lastOpenFiles": [
-    "渗透/外网打点/SSRF/SSRF面试篇.md",
-    "渗透/外网打点/XSS/XSS面试篇.md",
-    "渗透/外网打点/XSS/XSS初识.md",
-    "CTF/JAVA/Think_java题解.md",
+    "images/Pasted.md",
     "渗透/外网打点/SSRF/SSRF漏洞初识.md",
+    "CTF/JAVA/Think_java题解.md",
+    "渗透/外网打点/SSRF/SSRF面试篇.md",
+    "渗透/外网打点/XSS/XSS初识.md",
+    "渗透/外网打点/XSS/XSS面试篇.md",
     "渗透/外网打点/XSS",
     "渗透/output/XSS.md",
     "渗透/output/attachment",
     "渗透/output",
     "渗透/外网打点/Sql注入/sql注入初识.md",
-    "images/Pasted image 20241109182835.png",
+    "images/20241109182835.png",
     "images/5dd3edc04b0d1d931aa0f459b0a2a989.png",
     "渗透/外网打点/SSRF/attachment/5dd3edc04b0d1d931aa0f459b0a2a989.png",
     "渗透/外网打点/SSRF/attachment",
