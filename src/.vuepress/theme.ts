@@ -4,11 +4,11 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://tvt-dog.github.io",
+  hostname: "https://f0rward.fun/",
 
   author: {
     name: "Ho1d_F0rward",
-    url: "https://tvt-dog.github.io/TvT-dog/",
+    url: "https://f0rward.fun/",
     email: "outlook_39ae1e67a9a1791b@outlook.com",
   },
 
