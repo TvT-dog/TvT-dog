@@ -8,29 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "398701fd9e089446",
+            "id": "612d2387e13e061e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "渗透/外网打点/SSRF/SSRF漏洞初识.md",
+                "file": "渗透/外网打点/信息收集/信息收集.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SSRF漏洞初识"
-            }
-          },
-          {
-            "id": "612d2387e13e061e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "images/20241109182835.png"
-              },
-              "icon": "lucide-image",
-              "title": "20241109182835"
+              "title": "信息收集"
             }
           },
           {
@@ -213,47 +201,51 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "398701fd9e089446",
+  "active": "612d2387e13e061e",
   "lastOpenFiles": [
+    "渗透/外网打点/信息收集/谷歌语法.md",
+    "渗透/外网打点/业务场景/业务场景.md",
+    "渗透/外网打点/业务场景/后台页面.md",
+    "渗透/外网打点/业务场景/登陆页面.md",
+    "渗透/外网打点/越权配置/越权.md",
+    "渗透/外网打点/越权配置/常见绕过.md",
+    "渗透/外网打点/Nginx漏洞/Nginx漏洞.md",
+    "渗透/外网打点/Nginx漏洞/HOST碰撞.md",
+    "images/20241109182835.png",
+    "渗透/外网打点/Java环境/逻辑漏洞.md",
+    "渗透/外网打点/Java环境/Java-文件上传.md",
+    "渗透/外网打点/Java环境/Java-el表达式.md",
+    "渗透/外网打点/Java环境/Java-SQL注入风险.md",
+    "渗透/外网打点/Java环境/Java-ssrf风险.md",
+    "渗透/外网打点/Java环境/JAVA-Xxe风险.md",
+    "渗透/外网打点/Sqlmap使用.md",
+    "渗透/外网打点/XXE漏洞.md",
+    "渗透/外网打点/文件上传.md",
+    "渗透/外网打点/外网打点.md",
+    "渗透/外网打点/命令执行.md",
     "渗透/外网打点/XSS/XSS初识.md",
     "渗透/外网打点/XSS/XSS面试篇.md",
     "CTF/JAVA/Think_java题解.md",
     "README.md",
     "渗透/外网打点/SSRF/SSRF漏洞初识.md",
-    "images/20241109182835.png",
     "images/Pasted.md",
     "渗透/外网打点/SSRF/SSRF面试篇.md",
     "渗透/外网打点/XSS",
-    "渗透/output/XSS.md",
     "渗透/output/attachment",
     "渗透/output",
-    "渗透/外网打点/Sql注入/sql注入初识.md",
     "images/5dd3edc04b0d1d931aa0f459b0a2a989.png",
     "渗透/外网打点/SSRF/attachment/5dd3edc04b0d1d931aa0f459b0a2a989.png",
     "渗透/外网打点/SSRF/attachment",
-    "渗透/外网打点/SSRF面试篇.md",
-    "渗透/外网打点/SSRF漏洞初识.md",
     "渗透/外网打点/SSRF",
-    "渗透/外网打点/未命名.md",
     "渗透/外网打点/attachment/5dd3edc04b0d1d931aa0f459b0a2a989.png",
     "渗透/外网打点/attachment",
     "渗透/attachment/5dd3edc04b0d1d931aa0f459b0a2a989.png",
     "渗透/attachment",
-    "开发/安卓/安卓学习.md",
     "images/Pasted image 20240916164832.png",
     "images/Pasted image 20240916185148.png",
     "images/03a75ca2813f4aa62266b5c706d7689d.png",
-    "开发/开发.md",
-    "CTF/CTF.md",
-    "CTF/JAVA/JAVA.md",
-    "开发/Protobuf.md",
-    "开发/Nginx.md",
-    "images/Pasted image 20240916164832.png.md",
-    "开发/SQL学习/SQL进阶查询.md",
     "渗透/外网打点/Sql注入",
     "渗透/外网打点",
-    "渗透/未命名",
-    "开发/有意思的文章/一分钱不花,炫酷博客带回家.md",
-    "开发/Java开发/请求处理.md"
+    "渗透/未命名"
   ]
 }
