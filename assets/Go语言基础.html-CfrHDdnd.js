@@ -1,0 +1,828 @@
+import{_ as s}from"./plugin-vue_export-helper-DlAUqK2U.js";import{c as a,d as i,o as e}from"./app-Cv4h3eEp.js";const l={};function p(d,n){return e(),a("div",null,n[0]||(n[0]=[i(`<h1 id="基础使用" tabindex="-1"><a class="header-anchor" href="#基础使用"><span>基础使用</span></a></h1><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>// hello.go</span></span>
+<span class="line"><span>// package declaration</span></span>
+<span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// import package</span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// function</span></span>
+<span class="line"><span>func add(a, b int) int {</span></span>
+<span class="line"><span>  return a+b</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>// global variable</span></span>
+<span class="line"><span>var g int = 100</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>  a, b := 1, 2</span></span>
+<span class="line"><span>  res := add(a, b)</span></span>
+<span class="line"><span>  fmt.Println(&quot;a=&quot;, a, &quot;b=&quot;, b, &quot;a+b=&quot;, res)</span></span>
+<span class="line"><span>  fmt.Println(&quot;g=&quot;, g)</span></span>
+<span class="line"><span>  fmt.Println(&quot;hello world!&quot;)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>注意点</strong></p><ul><li>func main()是程序开始执行的函数(但是如果有func init()函数，则会先执行init函数，再执行main函数)。</li><li>源程序文件所在的目录名称与包名称没有直接关系，不需要一致。不过通常保持一致，这符合Go的编码规范。</li><li>源程序文件名与包名没有直接关系，不需要将源程序文件名与文件开头申明的包名保持一样，通常这2者是不一样的。</li><li>只有在源程序文件开头声明package main，并且有func main()定义，才能生成可执行程序，否则go run file.go会报错。</li></ul><p>即主文件使用类似于C语言,main包的main函数为开始函数。</p><p>同时也是go为编译型语言，先进行编译后再运行。</p><ul><li>go build hello.go</li><li>./hello</li></ul><h1 id="数组" tabindex="-1"><a class="header-anchor" href="#数组"><span>数组</span></a></h1><h2 id="一维数组" tabindex="-1"><a class="header-anchor" href="#一维数组"><span>一维数组</span></a></h2><h3 id="赋值" tabindex="-1"><a class="header-anchor" href="#赋值"><span>赋值</span></a></h3><p>数组的大小必须是常量，不能是变量，比如下面的语法里的size必须是常量</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>var float_num_list1 [5]float32 = [5]float32{1.0, 2.0, 3.0, 4.0, 5.0}</span></span>
+<span class="line"><span>var float_num_list2 = [5]float32{1.0, 2.0, 3.0, 4.0, 5.0}</span></span>
+<span class="line"><span>int_num_list := [3]int{1, 2, 3}</span></span>
+<span class="line"><span>for index, value := range float_num_list1 {</span></span>
+<span class="line"><span>	fmt.Println(&quot;[float_num_list1]index=&quot;, index, &quot;value=&quot;, value)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>for index, value := range float_num_list2 {</span></span>
+<span class="line"><span>	fmt.Println(&quot;[float_num_list2]index=&quot;, index, &quot;value=&quot;, value)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>for index, value := range int_num_list {</span></span>
+<span class="line"><span>	fmt.Println(&quot;[int_num_list]index=&quot;, index, &quot;value=&quot;, value)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>不显式指定数组大小，编译器根据赋的值自行推导</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>var balance1 []int = [...]int{1,2} // 等价于[2]int{1,2}</span></span>
+<span class="line"><span>var balance2 = [...]int{1,2,3}</span></span>
+<span class="line"><span>balance3 := [...]int{1, 2}</span></span>
+<span class="line"><span>fmt.Println(&quot;balance1=&quot;, balance1)</span></span>
+<span class="line"><span>fmt.Println(&quot;balance2=&quot;, balance2)</span></span>
+<span class="line"><span>fmt.Println(&quot;balance3=&quot;, balance3)</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>指定下标赋值</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>balance := [5]int{1:10, 3:30} // 将数组下标为1和3的元素分别初始化为10和30</span></span>
+<span class="line"><span>fmt.Println(balance) // [0, 10, 0, 30, 0]</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="遍历数组" tabindex="-1"><a class="header-anchor" href="#遍历数组"><span>遍历数组</span></a></h3><p>使用for....rang 进行遍历</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>var float_num_list1 [5]float32 = [5]float32{1.0, 2.0, 3.0, 4.0, 5.0}</span></span>
+<span class="line"><span>for index := range float_num_list1 {</span></span>
+<span class="line"><span>    // index是数组下标</span></span>
+<span class="line"><span>    fmt.Println(&quot;[float_num_list1]index=&quot;, index) </span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>for index, value := range float_num_list1 {</span></span>
+<span class="line"><span>    // index是数组下标，value是对应的数组元素</span></span>
+<span class="line"><span>	fmt.Println(&quot;[float_num_list1]index=&quot;, index, &quot;value=&quot;, value)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>获取数组长度使用len(array)</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="多维数组" tabindex="-1"><a class="header-anchor" href="#多维数组"><span>多维数组</span></a></h2><h3 id="赋值-1" tabindex="-1"><a class="header-anchor" href="#赋值-1"><span>赋值</span></a></h3><p>和一维数组一样,数组大小必须为常量。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>array1 := [2][3]int {</span></span>
+<span class="line"><span>    {0, 1, 2},</span></span>
+<span class="line"><span>    {3, 4, 5}, // 如果花括号}在下一行，这里必须有逗号。如果花括号在这一行可以不用逗号</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>array2 := [2][3]int{}</span></span>
+<span class="line"><span>array2[0][2] = 1</span></span>
+<span class="line"><span>array2[1][1] = 2</span></span>
+<span class="line"><span>fmt.Println(&quot;array2=&quot;, array2)</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="遍历使用" tabindex="-1"><a class="header-anchor" href="#遍历使用"><span>遍历使用</span></a></h3><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span>import &quot;reflect&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    array := [2][3]int{{1, 2, 3}, {4, 5, 6}}</span></span>
+<span class="line"><span>    for index := range array {</span></span>
+<span class="line"><span>        // array[index]类型是一维数组</span></span>
+<span class="line"><span>        fmt.Println(reflect.TypeOf(array[index])) </span></span>
+<span class="line"><span>        fmt.Printf(&quot;index=%d, value=%v\\n&quot;, index, array[index])</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>twoDimArray := [2][3]int {</span></span>
+<span class="line"><span>    {0, 1, 2},</span></span>
+<span class="line"><span>    {3, 4, 5}}</span></span>
+<span class="line"><span>for index := range twoDimArray {</span></span>
+<span class="line"><span>    fmt.Printf(&quot;row %d is &quot;, index) //index的值是0,1，表示二维数组的第1行和第2行</span></span>
+<span class="line"><span>    fmt.Println(twoDimArray[index]) //twoDimArray[index]类型就是一维数组</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span> for row_index, row_value := range twoDimArray {</span></span>
+<span class="line"><span>    for col_index, col_value := range row_value {</span></span>
+<span class="line"><span>        fmt.Printf(&quot;twoDimArray[%d][%d]=%d &quot;, row_index, col_index, col_value)</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>    fmt.Println()</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="函数参数" tabindex="-1"><a class="header-anchor" href="#函数参数"><span>函数参数</span></a></h3><p>如果数组作为函数参数，实参和形参的定义必须相同，要么都是长度相同的数组。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span>import &quot;reflect&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func sum(array [5]int, size int) int{</span></span>
+<span class="line"><span>    sum := 0</span></span>
+<span class="line"><span>    for i:=0; i&lt;size; i++ {</span></span>
+<span class="line"><span>        sum += array[i]</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>    return sum</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    a := [5]int {1, 2, 3, 4, 5} // a := [...]int{1, 2, 3, 4, 5}也可以去调用sum，编译器会自动推导出a的长度5</span></span>
+<span class="line"><span>    fmt.Println(&quot;type of a:&quot;, reflect.TypeOf(a)) // type of a: [5]int</span></span>
+<span class="line"><span>    ans := sum(a, 5)</span></span>
+<span class="line"><span>    fmt.Println(&quot;ans=&quot;, ans)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="select语义" tabindex="-1"><a class="header-anchor" href="#select语义"><span>select语义</span></a></h1><p>语法上和switch类似，有case分支和default分支，只不过select的每个case后面跟的是channel的收发操作。</p><h2 id="简单使用" tabindex="-1"><a class="header-anchor" href="#简单使用"><span>简单使用</span></a></h2><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import (</span></span>
+<span class="line"><span>    &quot;fmt&quot;</span></span>
+<span class="line"><span>    &quot;time&quot;</span></span>
+<span class="line"><span>)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    ch1 := make(chan int)</span></span>
+<span class="line"><span>    ch2 := make(chan int)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    go func() {</span></span>
+<span class="line"><span>        time.Sleep(2 * time.Second)</span></span>
+<span class="line"><span>        ch1 &lt;- 1</span></span>
+<span class="line"><span>    }()</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    go func() {</span></span>
+<span class="line"><span>        time.Sleep(1 * time.Second)</span></span>
+<span class="line"><span>        ch2 &lt;- 2</span></span>
+<span class="line"><span>    }()</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    select {</span></span>
+<span class="line"><span>    case v := &lt;-ch1:</span></span>
+<span class="line"><span>        fmt.Println(&quot;Received from ch1:&quot;, v)</span></span>
+<span class="line"><span>    case v := &lt;-ch2:</span></span>
+<span class="line"><span>        fmt.Println(&quot;Received from ch2:&quot;, v)</span></span>
+<span class="line"><span>    default:</span></span>
+<span class="line"><span>        fmt.Println(&quot;No communication ready&quot;)</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>select 语句会等待 ch1 和 ch2 两个通道的输入操作。由于 ch2 先准备好数据,select 语句会随机选择 ch2 的分支执行,并打印出 &quot;Received from ch2: 2&quot;。如果两个通道都没有准备好数据,则默认分支会被执行,打印出 &quot;No communication ready&quot;。</p><h1 id="函数-闭包和方法" tabindex="-1"><a class="header-anchor" href="#函数-闭包和方法"><span>函数，闭包和方法</span></a></h1><p>函数是独立定义的,闭包是函数内部定义的函数,方法是与类/对象关联定义的函数</p><h2 id="函数" tabindex="-1"><a class="header-anchor" href="#函数"><span>函数</span></a></h2><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>// func2.go</span></span>
+<span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/*</span></span>
+<span class="line"><span>函数add的返回值有2个，类型是int，标识符分别是c和d</span></span>
+<span class="line"><span>可以在函数体内直接给c和d赋值，return后面可以带，也可以不带返回值</span></span>
+<span class="line"><span>*/</span></span>
+<span class="line"><span>func addAndSub(a int, b int) (c int, d int) {</span></span>
+<span class="line"><span>	c = a + b</span></span>
+<span class="line"><span>	d = a - b</span></span>
+<span class="line"><span>	return // 这一行写为 return c, d 也可以</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>	a1, b1 := 1, 2</span></span>
+<span class="line"><span>	c1, d1 := addAndSub(a1, b1)</span></span>
+<span class="line"><span>	/*输出结果是：3 -1*/</span></span>
+<span class="line"><span>	fmt.Println(c1, d1)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="闭包" tabindex="-1"><a class="header-anchor" href="#闭包"><span>闭包</span></a></h2><p>匿名函数。顾名思义就是没有函数名。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>   /*</span></span>
+<span class="line"><span>   	定义2个匿名函数，也就是闭包。</span></span>
+<span class="line"><span>   	闭包可以直接调用，也可以赋值给一个变量，后续调用</span></span>
+<span class="line"><span>   */</span></span>
+<span class="line"><span>   result1 := func(a int, b int) int {</span></span>
+<span class="line"><span>   	return a + b</span></span>
+<span class="line"><span>   }(1, 2)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>   var sub = func(a int, b int) int {</span></span>
+<span class="line"><span>   	return a - b</span></span>
+<span class="line"><span>   }</span></span>
+<span class="line"><span>   result2 := sub(1, 2)</span></span>
+<span class="line"><span>   /*输出结果：3 -1*/</span></span>
+<span class="line"><span>   fmt.Println(result1, result2)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="方法" tabindex="-1"><a class="header-anchor" href="#方法"><span>方法</span></a></h2><p>类似java class里的方法，只是go没有class的概念。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>type Circle struct {</span></span>
+<span class="line"><span>	radius float64</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func (c Circle) getArea() float64 {</span></span>
+<span class="line"><span>	return 3.14 * c.radius * c.radius</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/*</span></span>
+<span class="line"><span>changeRadius和changeRadius2的区别是后者可以改变变量c的成员radius的值，前者不能改变</span></span>
+<span class="line"><span>*/</span></span>
+<span class="line"><span>func (c Circle) changeRadius(radius float64) {</span></span>
+<span class="line"><span>	c.radius = radius</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func (c *Circle) changeRadius2(radius float64) {</span></span>
+<span class="line"><span>	c.radius = radius</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func (c Circle) addRadius(x float64) float64{</span></span>
+<span class="line"><span>	return c.radius + x</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>	var c Circle</span></span>
+<span class="line"><span>	c.radius = 10</span></span>
+<span class="line"><span>	fmt.Println(&quot;radius=&quot;, c.radius, &quot;area=&quot;, c.getArea())	//10, 314</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	c.changeRadius(20)</span></span>
+<span class="line"><span>	fmt.Println(&quot;radius=&quot;, c.radius, &quot;area=&quot;, c.getArea())	//10, 314	</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	c.changeRadius2(20)</span></span>
+<span class="line"><span>	fmt.Println(&quot;radius=&quot;, c.radius, &quot;area=&quot;, c.getArea())	//20, 1256</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	result := c.addRadius(3.6)</span></span>
+<span class="line"><span>	fmt.Println(&quot;radius=&quot;, c.radius, &quot;result=&quot;, result) // 20, 23.6</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="指针" tabindex="-1"><a class="header-anchor" href="#指针"><span>指针</span></a></h1><h2 id="初始化" tabindex="-1"><a class="header-anchor" href="#初始化"><span>初始化</span></a></h2><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span>import &quot;reflect&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    i := 10</span></span>
+<span class="line"><span>    // 方式1</span></span>
+<span class="line"><span>    var intPtr *int = &amp;i</span></span>
+<span class="line"><span>    fmt.Println(&quot;pointer value:&quot;, intPtr, &quot; point to: &quot;, *intPtr)</span></span>
+<span class="line"><span>    fmt.Println(&quot;type of pointer:&quot;, reflect.TypeOf(intPtr))</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    // 方式2</span></span>
+<span class="line"><span>    intPtr2 := &amp;i</span></span>
+<span class="line"><span>    fmt.Println(*intPtr2)</span></span>
+<span class="line"><span>    fmt.Println(&quot;type of pointer:&quot;, reflect.TypeOf(intPtr2))</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    // 方式3</span></span>
+<span class="line"><span>    var intPtr3 = &amp;i;</span></span>
+<span class="line"><span>    fmt.Println(*intPtr3)</span></span>
+<span class="line"><span>    fmt.Println(&quot;type of pointer:&quot;, reflect.TypeOf(intPtr3))</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    // 方式4</span></span>
+<span class="line"><span>    var intPtr4 *int</span></span>
+<span class="line"><span>    intPtr4 = &amp;i</span></span>
+<span class="line"><span>    fmt.Println(*intPtr4)</span></span>
+<span class="line"><span>    fmt.Println(&quot;type of pointer:&quot;, reflect.TypeOf(intPtr4))</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>注意</strong> 指针的默认值为nil</p><h2 id="指针数组" tabindex="-1"><a class="header-anchor" href="#指针数组"><span>指针数组</span></a></h2><p>即一个数组中存在多个指针，即为指针数组。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main  </span></span>
+<span class="line"><span>  </span></span>
+<span class="line"><span>import &quot;fmt&quot;  </span></span>
+<span class="line"><span>  </span></span>
+<span class="line"><span>func main() {  </span></span>
+<span class="line"><span>    var ptrArray [5]*int  </span></span>
+<span class="line"><span>    a := [5]int{1, 2, 3, 4, 5}  </span></span>
+<span class="line"><span>    for i := 0; i &lt; 5; i++ {  </span></span>
+<span class="line"><span>       ptrArray[i] = &amp;a[i]  </span></span>
+<span class="line"><span>    }  </span></span>
+<span class="line"><span>  </span></span>
+<span class="line"><span>    for i := 0; i &lt; 5; i++ {  </span></span>
+<span class="line"><span>       fmt.Printf(&quot;%d &quot;, *ptrArray[i])  </span></span>
+<span class="line"><span>    }  </span></span>
+<span class="line"><span>    fmt.Println()  </span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="指向指针的指针" tabindex="-1"><a class="header-anchor" href="#指向指针的指针"><span>指向指针的指针</span></a></h2><p>我们可以简单理解为一个链式关系</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    var a int = 100</span></span>
+<span class="line"><span>    var ptr1 *int = &amp;a</span></span>
+<span class="line"><span>    var ptr2 **int = &amp;ptr1</span></span>
+<span class="line"><span>    var ptr3 ***int = &amp;ptr2</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    fmt.Println(&quot;*ptr1=&quot;, *ptr1)</span></span>
+<span class="line"><span>    fmt.Println(&quot;**ptr2=&quot;, **ptr2)</span></span>
+<span class="line"><span>    fmt.Println(&quot;***ptr3=&quot;, ***ptr3)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="函数参数-1" tabindex="-1"><a class="header-anchor" href="#函数参数-1"><span>函数参数</span></a></h2><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 这个可以交换外部传入的2个实参的值</span></span>
+<span class="line"><span>func swap(a *int, b *int) {</span></span>
+<span class="line"><span>    *a, *b = *b, *a</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 这个无法交换外部传入的2个实参的值</span></span>
+<span class="line"><span>func swap2(a *int, b *int) {</span></span>
+<span class="line"><span>    a, b = b, a</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    a, b := 1, 2</span></span>
+<span class="line"><span>    swap(&amp;a, &amp;b)</span></span>
+<span class="line"><span>    fmt.Println(&quot;a=&quot;, a, &quot; b=&quot;, b) // a= 2  b= 1</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    swap2(&amp;a, &amp;b)</span></span>
+<span class="line"><span>    fmt.Println(&quot;a=&quot;, a, &quot; b=&quot;, b) // a= 2  b= 1</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当我们使用* int时，使用<code>*b</code>即代表我们使用的是他指向的变量。直接使用b即使用的是他指向变量的值。</p><h1 id="结构体" tabindex="-1"><a class="header-anchor" href="#结构体"><span>结构体</span></a></h1><h2 id="赋值初始化与成员访问" tabindex="-1"><a class="header-anchor" href="#赋值初始化与成员访问"><span>赋值初始化与成员访问</span></a></h2><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>type Book struct {</span></span>
+<span class="line"><span>    id int</span></span>
+<span class="line"><span>    title string</span></span>
+<span class="line"><span>    author string</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>book1 := Book{1, &quot;go tutorial&quot;, &quot;jincheng9&quot;}</span></span>
+<span class="line"><span>book2 := Book{id:2, title:&quot;day day up&quot;, author:&quot;unknown&quot;}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="结构体指针" tabindex="-1"><a class="header-anchor" href="#结构体指针"><span>结构体指针</span></a></h2><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>type Book struct {</span></span>
+<span class="line"><span>    id int</span></span>
+<span class="line"><span>    author string</span></span>
+<span class="line"><span>    title string</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func printBook(book *Book) {</span></span>
+<span class="line"><span>    fmt.Println(&quot;id:&quot;, book.id)</span></span>
+<span class="line"><span>    fmt.Println(&quot;author:&quot;, book.author)</span></span>
+<span class="line"><span>    fmt.Println(&quot;title:&quot;, book.title)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    book := Book{1, &quot;expert&quot;, &quot;go&quot;}</span></span>
+<span class="line"><span>    bookPtr := &amp;book</span></span>
+<span class="line"><span>    printBook(bookPtr)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这里访问结构体指针的成员和普通结构体一样。</p><h2 id="与面向对象的对比" tabindex="-1"><a class="header-anchor" href="#与面向对象的对比"><span>与面向对象的对比</span></a></h2><p>可以对struct结构体类型定义方法，结构体对象调用该方法，来达到类似面向对象的效果。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>type Book struct {</span></span>
+<span class="line"><span>    id int</span></span>
+<span class="line"><span>    author string</span></span>
+<span class="line"><span>    title string</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func (book Book) printBook() {</span></span>
+<span class="line"><span>    fmt.Printf(&quot;id:%d, author:%s, title:%s\\n&quot;, book.id, book.author, book.title)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func (book *Book) changeTitle1() {</span></span>
+<span class="line"><span>    book.title = &quot;new title1&quot;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 这个无法改变调用该方法的结构体变量里的成员的值</span></span>
+<span class="line"><span>func (book Book) changeTitle2() {</span></span>
+<span class="line"><span>    book.title = &quot;new title2&quot;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    book := Book{1, &quot;expert&quot;, &quot;go&quot;}</span></span>
+<span class="line"><span>    book.printBook()</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    book.changeTitle1() // 会修改变量book里的成员title的值</span></span>
+<span class="line"><span>    book.printBook()</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    book.changeTitle2() // 不会对book的值有任何影响</span></span>
+<span class="line"><span>    book.printBook()</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>注意点</strong>：</p><ul><li>如果结构体要被其它package使用，那结构体的标识符或者说结构体的名称首字母要大写</li><li>如果结构体的成员要被其它package使用，那结构体和结构体的成员标识符首字母都要大写，否则只能在当前包里使用</li></ul><h1 id="切片" tabindex="-1"><a class="header-anchor" href="#切片"><span>切片</span></a></h1><p>切片是对数组的抽象。Go数组的长度在定义后是固定的，不可改变的。切片的长度和容量是不固定的，可以动态增加元素，切片的容量也会根据情况自动扩容。</p><h2 id="简单使用-1" tabindex="-1"><a class="header-anchor" href="#简单使用-1"><span>简单使用</span></a></h2><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func printSlice(param []int) {</span></span>
+<span class="line"><span>    fmt.Printf(&quot;slice len:%d, cap:%d, value:%v\\n&quot;, len(param), cap(param), param)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    slice1 := []int{1}</span></span>
+<span class="line"><span>    slice2 := make([]int, 3, 100)//创建了一个长度为 3、最大容量为 100 的整型切片</span></span>
+<span class="line"><span>    printSlice(slice1)</span></span>
+<span class="line"><span>    printSlice(slice2)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="切片截取" tabindex="-1"><a class="header-anchor" href="#切片截取"><span>切片截取</span></a></h2><p>这一点就类似于python了，使用冒号<code>:</code>来对数组或者切片做截取。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span>import &quot;reflect&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func printSlice(param []int) {</span></span>
+<span class="line"><span>    fmt.Printf(&quot;param len:%d, cap:%d, value:%v\\n&quot;, len(param), cap(param), param)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    slice := []int{}</span></span>
+<span class="line"><span>    var slice2 []int</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    fmt.Println(&quot;slice==nil&quot;, slice==nil) // false</span></span>
+<span class="line"><span>    printSlice(slice)</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    fmt.Println(&quot;slice2==nil&quot;, slice2==nil) // true</span></span>
+<span class="line"><span>    printSlice(slice2)</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    // 对数组做切片</span></span>
+<span class="line"><span>    array := [3]int{1,2,3} // array是数组</span></span>
+<span class="line"><span>    slice3 := array[1:3] // slice3是切片</span></span>
+<span class="line"><span>    fmt.Println(&quot;slice3 type:&quot;, reflect.TypeOf(slice3))</span></span>
+<span class="line"><span>    fmt.Println(&quot;slice3=&quot;, slice3) // slice3= [2 3]</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    slice4 := slice3[1:2]</span></span>
+<span class="line"><span>    fmt.Println(&quot;slice4=&quot;, slice4) // slice4= [3]</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    /* slice5-&gt;slice4-&gt;slice3-&gt;array</span></span>
+<span class="line"><span>    对slice5的修改，会影响到slice4, slice3和array</span></span>
+<span class="line"><span>    */</span></span>
+<span class="line"><span>    slice5 := slice4[:]</span></span>
+<span class="line"><span>    fmt.Println(&quot;slice5=&quot;, slice5) // slice5= [3]</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    slice5[0] = 10</span></span>
+<span class="line"><span>    fmt.Println(&quot;array=&quot;, array) // array= [1 2 10]</span></span>
+<span class="line"><span>    fmt.Println(&quot;slice3=&quot;, slice3) // slice3= [2 10]</span></span>
+<span class="line"><span>    fmt.Println(&quot;slice4=&quot;, slice4) // slice4= [10]</span></span>
+<span class="line"><span>    fmt.Println(&quot;slice5=&quot;, slice5) // slice5= [10]</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="常用函数" tabindex="-1"><a class="header-anchor" href="#常用函数"><span>常用函数</span></a></h2><ul><li>len()：获取切片的长度，也就是实际存储了多少个元素</li><li>cap(): 获取切片的容量。如果切片的元素个数要超过当前容量，会自动扩容</li><li>append()：通过append函数给切片加元素，但不改变原切片的值，比如下例里的append(slice, 4)并不会改变slice的值。</li></ul><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    slice := []int{1, 2, 3}</span></span>
+<span class="line"><span>    // 往原切片里加一个元素</span></span>
+<span class="line"><span>    test := append(slice, 4)</span></span>
+<span class="line"><span>    // append不会改变slice的值，除非把append的结果重新赋值给slice</span></span>
+<span class="line"><span>    fmt.Println(slice) // [1 2 3]</span></span>
+<span class="line"><span>    fmt.Println(test) // [1 2 3 4]</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    // 通过append给切片添加切片</span></span>
+<span class="line"><span>    temp := []int{1,2}</span></span>
+<span class="line"><span>    test = append(test, temp...) // 注意，第2个参数有...结尾</span></span>
+<span class="line"><span>    fmt.Println(test) // [1 2 3 4 1 2]</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    /*下面对array数组做append就会报错:  first argument to append must be slice; have [3]int</span></span>
+<span class="line"><span>    array := [3]int{1, 2, 3}</span></span>
+<span class="line"><span>    array2 := append(array, 1)</span></span>
+<span class="line"><span>    fmt.Println(array2)</span></span>
+<span class="line"><span>    */</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="函数传参" tabindex="-1"><a class="header-anchor" href="#函数传参"><span>函数传参</span></a></h2><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func change1(param []int) {</span></span>
+<span class="line"><span>	param[0] = 100 // 这个会改变外部切片的值</span></span>
+<span class="line"><span>	param = append(param, 200) // append不会改变外部切片的值</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func change2(param *[]int) {</span></span>
+<span class="line"><span>	*param = append(*param, 300) // 传切片指针，通过这种方式append可以改变外部切片的值</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>	slice := make([]int, 2, 100)</span></span>
+<span class="line"><span>	fmt.Println(slice) // [0, 0]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	change1(slice)</span></span>
+<span class="line"><span>	fmt.Println(slice) // [100, 0]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	change2(&amp;slice)</span></span>
+<span class="line"><span>	fmt.Println(slice) // [100, 0, 300]</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="map" tabindex="-1"><a class="header-anchor" href="#map"><span>map</span></a></h1><p>无序的基于&lt;key, value&gt;对组成的数据结构，key是唯一的，类似python的dict。map必须初始化后才能写map。</p><h2 id="初始化和赋值" tabindex="-1"><a class="header-anchor" href="#初始化和赋值"><span>初始化和赋值</span></a></h2><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>	var counter map[string]int</span></span>
+<span class="line"><span>	/*</span></span>
+<span class="line"><span>	map没有初始化，读map相当于读了一个空map</span></span>
+<span class="line"><span>	下例中：value是int的零值0，ok是false</span></span>
+<span class="line"><span>	*/</span></span>
+<span class="line"><span>	value, ok := counter[&quot;a&quot;]</span></span>
+<span class="line"><span>	fmt.Println(value, ok)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	/*counter没有初始化，给counter赋值会在运行时报错</span></span>
+<span class="line"><span>	  panic: assignment to entry in nil map</span></span>
+<span class="line"><span>	*/</span></span>
+<span class="line"><span>	counter[&quot;a&quot;] = 1</span></span>
+<span class="line"><span>	fmt.Println(counter)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="常用函数-1" tabindex="-1"><a class="header-anchor" href="#常用函数-1"><span>常用函数</span></a></h2><p>delete()允许删除一个不存在的key，对map无任何影响。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    dict :=  map[string]int{&quot;a&quot;:1, &quot;b&quot;:2}</span></span>
+<span class="line"><span>    fmt.Println(dict) // map[a:1 b:2]</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    // 删除&quot;a&quot;这个key</span></span>
+<span class="line"><span>    delete(dict, &quot;a&quot;)</span></span>
+<span class="line"><span>    fmt.Println(dict) // map[b:2]</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    // 删除&quot;c&quot;这个不在的key，对map结果无影响</span></span>
+<span class="line"><span>    delete(dict, &quot;c&quot;)</span></span>
+<span class="line"><span>    fmt.Println(dict) // map[b:2]</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="接口" tabindex="-1"><a class="header-anchor" href="#接口"><span>接口</span></a></h1><h2 id="基本使用" tabindex="-1"><a class="header-anchor" href="#基本使用"><span>基本使用</span></a></h2><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// all animals can speak</span></span>
+<span class="line"><span>type Animal interface {</span></span>
+<span class="line"><span>    speak()</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// cat</span></span>
+<span class="line"><span>type Cat struct {</span></span>
+<span class="line"><span>    name string</span></span>
+<span class="line"><span>    age int</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func(cat Cat) speak() {</span></span>
+<span class="line"><span>    fmt.Println(&quot;cat miaomiaomiao&quot;)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// dog</span></span>
+<span class="line"><span>type Dog struct {</span></span>
+<span class="line"><span>    name string</span></span>
+<span class="line"><span>    age int</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func(dog *Dog) speak() {</span></span>
+<span class="line"><span>    fmt.Println(&quot;dog wangwangwang&quot;)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    var animal Animal = Cat{&quot;gaffe&quot;, 1}</span></span>
+<span class="line"><span>    animal.speak() // cat miaomiaomiao</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    /*</span></span>
+<span class="line"><span>    因为Dog的speak方法用的是指针接受者，因此给interface赋值的时候，要赋指针</span></span>
+<span class="line"><span>    */</span></span>
+<span class="line"><span>    animal = &amp;Dog{&quot;caiquan&quot;, 2}</span></span>
+<span class="line"><span>    animal.speak() // dog wangwangwang</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul><li><strong>多个struct类型可以实现同一个interface</strong>：多个类型都有共同的方法(行为)。比如上面示例里的猫和狗都会叫唤，猫和狗就是2个类型，叫唤就是speak方法。</li><li><strong>一个struct类型可以实现多个interface</strong>。比如猫这个类型，既是猫科动物，也是哺乳动物。猫科动物可以是一个interface，哺乳动物可以是另一个interface，猫这个struct类型可以实现猫科动物和哺乳动物这2个interface里的方法。</li></ul><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// interface1，猫科动物的共同行为</span></span>
+<span class="line"><span>type Felines interface {</span></span>
+<span class="line"><span>    feet() </span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// interface2, 哺乳动物的共同行为</span></span>
+<span class="line"><span>type Mammal interface {</span></span>
+<span class="line"><span>    born()</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 猫既是猫科动物也是哺乳动物，2个行为都实现</span></span>
+<span class="line"><span>type Cat struct {</span></span>
+<span class="line"><span>    name string</span></span>
+<span class="line"><span>    age int</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func(cat Cat) feet() {</span></span>
+<span class="line"><span>    fmt.Println(&quot;cat feet&quot;)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func(cat *Cat) born() {</span></span>
+<span class="line"><span>    fmt.Println(&quot;cat born&quot;)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    cat := Cat{&quot;rich&quot;, 1}</span></span>
+<span class="line"><span>    var a Felines = cat</span></span>
+<span class="line"><span>    a.feet()</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    var b Mammal = &amp;cat</span></span>
+<span class="line"><span>    b.born()</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>interface可以嵌套：一个interface里包含其它interface</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// interface1</span></span>
+<span class="line"><span>type Felines interface {</span></span>
+<span class="line"><span>    feet() </span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// interface2, 嵌套了interface1</span></span>
+<span class="line"><span>type Mammal interface {</span></span>
+<span class="line"><span>    Felines</span></span>
+<span class="line"><span>    born()</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 猫实现Mammal这个interface里的所有方法</span></span>
+<span class="line"><span>type Cat struct {</span></span>
+<span class="line"><span>    name string</span></span>
+<span class="line"><span>    age int</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func(cat Cat) feet() {</span></span>
+<span class="line"><span>    fmt.Println(&quot;cat feet&quot;)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func(cat *Cat) born() {</span></span>
+<span class="line"><span>    fmt.Println(&quot;cat born&quot;)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    cat := Cat{&quot;rich&quot;, 1}</span></span>
+<span class="line"><span>    /*Mammal有feet和born方法，2个都可以调用*/</span></span>
+<span class="line"><span>    var a Mammal = &amp;cat</span></span>
+<span class="line"><span>    a.feet()</span></span>
+<span class="line"><span>    a.born()</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    var b Felines = cat</span></span>
+<span class="line"><span>    b.feet()</span></span>
+<span class="line"><span>    // b.born() 调用这个会编译报错，因为Felines没有born方法</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="空接口" tabindex="-1"><a class="header-anchor" href="#空接口"><span>空接口</span></a></h2><p>如果空interface作为函数参数，可以接受任何类型的实参。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>type Cat struct {</span></span>
+<span class="line"><span>    name string</span></span>
+<span class="line"><span>    age int</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 打印空interface的类型和具体的值</span></span>
+<span class="line"><span>func print(x interface{}) {</span></span>
+<span class="line"><span>    fmt.Printf(&quot;type:%T, value:%v\\n&quot;, x, x)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>    // 传map实参给空接口</span></span>
+<span class="line"><span>    dict := map[string]int{&quot;a&quot;:1}</span></span>
+<span class="line"><span>    print(dict) // type:map[string]int, value:map[a:1]</span></span>
+<span class="line"><span>    </span></span>
+<span class="line"><span>    // 传struct实参给空接口</span></span>
+<span class="line"><span>    cat := Cat{&quot;nimo&quot;, 2}</span></span>
+<span class="line"><span>    print(cat) // type:main.Cat, value:{nimo 2}</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="断言" tabindex="-1"><a class="header-anchor" href="#断言"><span>断言</span></a></h2><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>var x interface{}</span></span>
+<span class="line"><span>x = &quot;a&quot;</span></span>
+<span class="line"><span>// 断言接口变量x的类型是string</span></span>
+<span class="line"><span>v, ok := x.(string)</span></span>
+<span class="line"><span>if ok {</span></span>
+<span class="line"><span>    // 断言成功</span></span>
+<span class="line"><span>    fmt.Println(&quot;assert true, value:&quot;, v)</span></span>
+<span class="line"><span>} else{</span></span>
+<span class="line"><span>    // 断言失败</span></span>
+<span class="line"><span>	fmt.Println(&quot;assert false&quot;)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="多线程" tabindex="-1"><a class="header-anchor" href="#多线程"><span>多线程</span></a></h1><h2 id="goroutine" tabindex="-1"><a class="header-anchor" href="#goroutine"><span>goroutine</span></a></h2><p>Go会为main()函数创建一个默认的goroutine，如果main()函数结束了，那所有在main()中启动的goroutine都会立马结束。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main  </span></span>
+<span class="line"><span>  </span></span>
+<span class="line"><span>import &quot;fmt&quot;  </span></span>
+<span class="line"><span>  </span></span>
+<span class="line"><span>func hello() {  </span></span>
+<span class="line"><span>    fmt.Println(&quot;hello&quot;)  </span></span>
+<span class="line"><span>}  </span></span>
+<span class="line"><span>  </span></span>
+<span class="line"><span>func main() {  </span></span>
+<span class="line"><span>    /*开启一个goroutine去执行hello函数*/  </span></span>
+<span class="line"><span>    go hello()  </span></span>
+<span class="line"><span>    go hello()  </span></span>
+<span class="line"><span>    go hello()  </span></span>
+<span class="line"><span>    go hello()  </span></span>
+<span class="line"><span>    go hello()  </span></span>
+<span class="line"><span>    fmt.Println(&quot;main end&quot;)  </span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>执行结果可能有以下3种： main end // 只打印main end main end // 先打印main end，再打印hello hello hello // 先打印hello，再打印main end main end</p><h2 id="channel" tabindex="-1"><a class="header-anchor" href="#channel"><span>channel</span></a></h2><p>多个goroutine之间，可以通过channel来通信。</p><h3 id="基本使用-1" tabindex="-1"><a class="header-anchor" href="#基本使用-1"><span>基本使用</span></a></h3><p>channel有3种操作，发送数据，接收数据和关闭channel。发送和接收都是用<code>&lt;-</code>符号</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>ch := make(chan int)</span></span>
+<span class="line"><span>ch &lt;- 10 // 把10发送到ch里</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ch := make(chan int)</span></span>
+<span class="line"><span>x := &lt;-ch // 从通道ch里接收值，并赋值给变量x</span></span>
+<span class="line"><span>var y int</span></span>
+<span class="line"><span>y = &lt;-ch // 从通道ch里接收值，并赋值给变量y</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>ch := make(chan int)</span></span>
+<span class="line"><span>close(ch) // 关闭通道</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="缓冲区" tabindex="-1"><a class="header-anchor" href="#缓冲区"><span>缓冲区</span></a></h3><h4 id="无缓冲区" tabindex="-1"><a class="header-anchor" href="#无缓冲区"><span>无缓冲区</span></a></h4><p>往channel发送数据的时候，必须有其它goroutine从channel里接收了数据，发送操作才可以成功，发送操作所在的goroutine才能继续往下执行。从channel里接收数据也是同理，必须有其它goroutine往channel里发送了数据，接收操作才可以成功，接收操作所在的goroutine才能继续往下执行。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span>import &quot;time&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>type Cat struct {</span></span>
+<span class="line"><span>	name string</span></span>
+<span class="line"><span>	age int</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func fetchChannel(ch chan Cat) {</span></span>
+<span class="line"><span>	value := &lt;- ch</span></span>
+<span class="line"><span>	fmt.Printf(&quot;type: %T, value: %v\\n&quot;, value, value)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>	ch := make(chan Cat)</span></span>
+<span class="line"><span>	a := Cat{&quot;yingduan&quot;, 1}</span></span>
+<span class="line"><span>	// 启动一个goroutine，用于从ch这个通道里获取数据</span></span>
+<span class="line"><span>	go fetchChannel(ch)</span></span>
+<span class="line"><span>	// 往cha这个通道里发送数据</span></span>
+<span class="line"><span>	ch &lt;- a</span></span>
+<span class="line"><span>	// main这个goroutine在这里等待2秒</span></span>
+<span class="line"><span>	time.Sleep(2*time.Second)</span></span>
+<span class="line"><span>	fmt.Println(&quot;end&quot;)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>如果交换了顺序，main函数就会堵塞在ch&lt;-a这一行，因为这个发送是阻塞的，不会往下执行，这个时候没有任何goroutine会从channel接收数据.</p><p>同时如果没有<code>time.Sleep(2*time.Second)</code>这一行，那么可能main函数里的end和函数fetchChannel里的print内容都打印，也可能只会打印main函数里的end。因为fetchChannel里的value := &lt;-ch执行之后，main里的ch&lt;-a就不再阻塞，继续往下执行了，所以可能main里最后的fmt.Println比fetchChannel里的fmt.Printf先执行，main执行完之后程序就结束了，所有goroutine自动结束，就不再执行fetchChannel里的fmt.Printf了。main里加上time.Sleep就可以允许fetchChannel这个goroutine有足够的时间执行完成。</p><h4 id="有缓冲区" tabindex="-1"><a class="header-anchor" href="#有缓冲区"><span>有缓冲区</span></a></h4><p>对于有缓冲区的channel，对发送方而言：</p><ul><li>如果缓冲区未满，那发送方发送数据到channel缓冲区后，就可以继续往下执行，不用阻塞等待接收方从channel里接收数据。</li><li>如果缓冲区已满，那发送方发送数据到channel会阻塞，直到接收方从channel里接收了数据，这样缓冲区才有空间存储发送方发送的数据，发送方所在goroutine才能继续往下执行。</li></ul><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>	ch := make(chan int, 2)</span></span>
+<span class="line"><span>	// 下面2个发送操作不用阻塞等待接收方接收数据</span></span>
+<span class="line"><span>	ch &lt;- 10</span></span>
+<span class="line"><span>	ch &lt;- 20</span></span>
+<span class="line"><span>	/*</span></span>
+<span class="line"><span>	如果添加下面这行代码，就会一直阻塞，因为缓冲区已满，运行会报错</span></span>
+<span class="line"><span>	fatal error: all goroutines are asleep - deadlock!</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	ch &lt;- 30</span></span>
+<span class="line"><span>	*/</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	fmt.Println(&lt;-ch) // 10</span></span>
+<span class="line"><span>	fmt.Println(&lt;-ch) // 20</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="常用函数-2" tabindex="-1"><a class="header-anchor" href="#常用函数-2"><span>常用函数</span></a></h3><p>range迭代从channel里不断取数据</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span>import &quot;time&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func addData(ch chan int) {</span></span>
+<span class="line"><span>	/*</span></span>
+<span class="line"><span>	每3秒往通道ch里发送一次数据</span></span>
+<span class="line"><span>	*/</span></span>
+<span class="line"><span>	size := cap(ch)</span></span>
+<span class="line"><span>	for i:=0; i&lt;size; i++ {</span></span>
+<span class="line"><span>		ch &lt;- i</span></span>
+<span class="line"><span>		time.Sleep(3*time.Second)</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	// 数据发送完毕，关闭通道</span></span>
+<span class="line"><span>	close(ch)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>	ch := make(chan int, 10)</span></span>
+<span class="line"><span>	// 开启一个goroutine，用于往通道ch里发送数据</span></span>
+<span class="line"><span>	go addData(ch)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	/* range迭代从通道ch里获取数据</span></span>
+<span class="line"><span>	通道close后，range迭代取完通道里的值后，循环会自动结束</span></span>
+<span class="line"><span>	*/</span></span>
+<span class="line"><span>	for i := range ch {</span></span>
+<span class="line"><span>		fmt.Println(i)</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="单向通道" tabindex="-1"><a class="header-anchor" href="#单向通道"><span>单向通道</span></a></h3><p>如果channel作为函数的形参，可以控制限制数据和channel之间的数据流向，控制只能往channel发送数据或者只能从channel接收数据。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import &quot;fmt&quot;</span></span>
+<span class="line"><span>import &quot;time&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func write(ch chan&lt;-int) {</span></span>
+<span class="line"><span>	/*</span></span>
+<span class="line"><span>	参数ch是只写channel，不能从channel读数据，否则编译报错</span></span>
+<span class="line"><span>	receive from send-only type chan&lt;- int</span></span>
+<span class="line"><span>	*/</span></span>
+<span class="line"><span>	ch &lt;- 10</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func read(ch &lt;-chan int) {</span></span>
+<span class="line"><span>	/*</span></span>
+<span class="line"><span>	参数ch是只读channel，不能往channel里写数据，否则编译报错</span></span>
+<span class="line"><span>	send to receive-only type &lt;-chan int</span></span>
+<span class="line"><span>	*/</span></span>
+<span class="line"><span>	fmt.Println(&lt;-ch)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>	ch := make(chan int)</span></span>
+<span class="line"><span>	go write(ch)</span></span>
+<span class="line"><span>	go read(ch)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	// 等待3秒，保证write和read这2个goroutine都可以执行完成</span></span>
+<span class="line"><span>	time.Sleep(3*time.Second)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="defer函数" tabindex="-1"><a class="header-anchor" href="#defer函数"><span>defer函数</span></a></h1><p>defer常用于成对的操作，比如文件打开后要关闭、锁的申请和释放、sync.WaitGroup跟踪的goroutine的计数器的释放等。为了确保资源被释放，可以结合defer一起使用，避免在代码的各种条件分支里去释放资源，容易遗漏和出错。 简单来说就是控制负责函数最后的结尾工作。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import (</span></span>
+<span class="line"><span>	&quot;fmt&quot;</span></span>
+<span class="line"><span>	&quot;sync&quot;</span></span>
+<span class="line"><span>)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>var wg sync.WaitGroup</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func sumN(N int) {</span></span>
+<span class="line"><span>	// 调用defer wg.Done()确保sumN执行完之后，可以对wg的计数器减1</span></span>
+<span class="line"><span>	defer wg.Done()</span></span>
+<span class="line"><span>	sum := 0</span></span>
+<span class="line"><span>	for i:=1; i&lt;=N; i++ {</span></span>
+<span class="line"><span>		sum += i</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	fmt.Printf(&quot;sum from 1 to %d is %d\\n&quot;, N, sum)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>	// 设置wg跟踪的计数器数量为1</span></span>
+<span class="line"><span>	wg.Add(1)</span></span>
+<span class="line"><span>	// 开启sumN这个goroutine去计算1到100的和</span></span>
+<span class="line"><span>	go sumN(100)</span></span>
+<span class="line"><span>	// Wait会一直等待，直到wg的计数器为0</span></span>
+<span class="line"><span>	wg.Wait()</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	fmt.Println(&quot;finish&quot;)		</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="项目结构" tabindex="-1"><a class="header-anchor" href="#项目结构"><span>项目结构</span></a></h1><h2 id="package" tabindex="-1"><a class="header-anchor" href="#package"><span>package</span></a></h2><p>package本质上就是一个目录，目录里包含有一个或者多个Go源程序文件，或者package。也就是说package里面还可以嵌套包含子package。</p><p>每个Go源文件都属于一个package，在源文件开头指定package名称。</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package package_name</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div></div></div><p><strong>注意:</strong> package里的变量、函数、结构体、方法等如果要被本package外的程序引用，需要在命名的时候首字母大写</p><h2 id="import" tabindex="-1"><a class="header-anchor" href="#import"><span>import</span></a></h2><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>import (</span></span>
+<span class="line"><span>	&quot;fmt&quot;                           // 标准库</span></span>
+<span class="line"><span>	&quot;sync/atomic&quot;                   // 标准库sync的atomic子package</span></span>
+<span class="line"><span>	&quot;package1&quot;                      // 自开发的package</span></span>
+<span class="line"><span>	&quot;package2/package21&quot;            // 自开发package，嵌套子package</span></span>
+<span class="line"><span>	&quot;package2/package22&quot;            // 自开发package，嵌套子package</span></span>
+<span class="line"><span>	&quot;package3/package31/package311&quot; // 自开发package，多重嵌套</span></span>
+<span class="line"><span>)</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>使用import路径里面定义的<strong>package名称</strong>来访问package里的方法，结构体等，而不是路径名称。</p><p>举个例子，假设上面import的路径package2/package21这个目录下的Go源程序文件开头声明的package名称是realpackage，那访问这个package里的方法，结构体等要用realpackage.xxx来访问，而不是用package21.xxx来访问。</p><p>一句话总结：<strong>import的是路径，访问用package名称</strong>。最佳实践就是让两者保持一致。</p><h3 id="点操作" tabindex="-1"><a class="header-anchor" href="#点操作"><span>点操作</span></a></h3><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>import (</span></span>
+<span class="line"><span>    &quot;fmt&quot;</span></span>
+<span class="line"><span>    . &quot;package2/package21&quot;</span></span>
+<span class="line"><span>)</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>.</code>可以让后面的package里的成员注册到当前包的上下文，比如以前要用package21.Hello()来调用package21这个包里的函数Hello，用了点操作后，可以直接调用函数Hello()，前面不用跟package名称。</p><h3 id="下划线" tabindex="-1"><a class="header-anchor" href="#下划线"><span>下划线</span></a></h3><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>import (</span></span>
+<span class="line"><span>    &quot;fmt&quot;</span></span>
+<span class="line"><span>    _ &quot;package2/package21&quot;</span></span>
+<span class="line"><span>)</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>下划线<code>_</code>的效果：只会执行包里各个源程序文件的init方法，没法调用包里的成员。</p><h1 id="异常" tabindex="-1"><a class="header-anchor" href="#异常"><span>异常</span></a></h1><h2 id="panic" tabindex="-1"><a class="header-anchor" href="#panic"><span>panic</span></a></h2><p>用于抛出错误</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>panic(12)</span></span>
+<span class="line"><span>panic(&quot;invalid parameter&quot;)</span></span>
+<span class="line"><span>panic(Error(&quot;cannot parse&quot;))</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="recover" tabindex="-1"><a class="header-anchor" href="#recover"><span>recover</span></a></h2><p>用于捕获错误</p><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" data-title="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span>package main</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>import (</span></span>
+<span class="line"><span>	&quot;fmt&quot;</span></span>
+<span class="line"><span>)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func a() {</span></span>
+<span class="line"><span>	defer func() {</span></span>
+<span class="line"><span>		/*捕获函数a内部的panic*/</span></span>
+<span class="line"><span>		r := recover()</span></span>
+<span class="line"><span>		fmt.Println(&quot;panic recover&quot;, r)</span></span>
+<span class="line"><span>	}()</span></span>
+<span class="line"><span>	panic(1)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>func main() {</span></span>
+<span class="line"><span>	defer func() {</span></span>
+<span class="line"><span>		/*因为函数a的panic已经被函数a内部的recover捕获了</span></span>
+<span class="line"><span>		所以main里的recover捕获不到异常，r的值是nil*/</span></span>
+<span class="line"><span>		r := recover()</span></span>
+<span class="line"><span>		fmt.Println(&quot;main recover&quot;, r)</span></span>
+<span class="line"><span>	}()</span></span>
+<span class="line"><span>	a()</span></span>
+<span class="line"><span>	fmt.Println(&quot;main&quot;)</span></span>
+<span class="line"><span>}</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="参考文档" tabindex="-1"><a class="header-anchor" href="#参考文档"><span>参考文档</span></a></h1><p>https://github.com/jincheng9/go-tutorial/blob/main/workspace/lesson10/readme.md</p>`,153)]))}const t=s(l,[["render",p],["__file","Go语言基础.html.vue"]]),v=JSON.parse('{"path":"/%E5%BC%80%E5%8F%91/Go%E5%BC%80%E5%8F%91/Go%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80.html","title":"基础使用","lang":"zh-CN","frontmatter":{"data":"2024-08-21T00:00:00.000Z","关联":["[[Go开发]]"],"博客链接":"https:/www.cnblogs.com/Ho1dF0rward/p/18374787","description":"基础使用 注意点 func main()是程序开始执行的函数(但是如果有func init()函数，则会先执行init函数，再执行main函数)。 源程序文件所在的目录名称与包名称没有直接关系，不需要一致。不过通常保持一致，这符合Go的编码规范。 源程序文件名与包名没有直接关系，不需要将源程序文件名与文件开头申明的包名保持一样，通常这2者是不一样的。 ...","gitInclude":[],"head":[["meta",{"property":"og:url","content":"https://f0rward.fun%E5%BC%80%E5%8F%91/Go%E5%BC%80%E5%8F%91/Go%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80.html"}],["meta",{"property":"og:site_name","content":"Ho1d_F0rward的知识库"}],["meta",{"property":"og:title","content":"基础使用"}],["meta",{"property":"og:description","content":"基础使用 注意点 func main()是程序开始执行的函数(但是如果有func init()函数，则会先执行init函数，再执行main函数)。 源程序文件所在的目录名称与包名称没有直接关系，不需要一致。不过通常保持一致，这符合Go的编码规范。 源程序文件名与包名没有直接关系，不需要将源程序文件名与文件开头申明的包名保持一样，通常这2者是不一样的。 ..."}],["meta",{"property":"og:type","content":"article"}],["meta",{"property":"og:locale","content":"zh-CN"}],["script",{"type":"application/ld+json"},"{\\"@context\\":\\"https://schema.org\\",\\"@type\\":\\"Article\\",\\"headline\\":\\"基础使用\\",\\"image\\":[\\"\\"],\\"dateModified\\":null,\\"author\\":[{\\"@type\\":\\"Person\\",\\"name\\":\\"Ho1d_F0rward\\",\\"url\\":\\"https://f0rward.fun/\\",\\"email\\":\\"outlook_39ae1e67a9a1791b@outlook.com\\"}]}"]]},"headers":[{"level":2,"title":"一维数组","slug":"一维数组","link":"#一维数组","children":[{"level":3,"title":"赋值","slug":"赋值","link":"#赋值","children":[]},{"level":3,"title":"遍历数组","slug":"遍历数组","link":"#遍历数组","children":[]}]},{"level":2,"title":"多维数组","slug":"多维数组","link":"#多维数组","children":[{"level":3,"title":"赋值","slug":"赋值-1","link":"#赋值-1","children":[]},{"level":3,"title":"遍历使用","slug":"遍历使用","link":"#遍历使用","children":[]},{"level":3,"title":"函数参数","slug":"函数参数","link":"#函数参数","children":[]}]},{"level":2,"title":"简单使用","slug":"简单使用","link":"#简单使用","children":[]},{"level":2,"title":"函数","slug":"函数","link":"#函数","children":[]},{"level":2,"title":"闭包","slug":"闭包","link":"#闭包","children":[]},{"level":2,"title":"方法","slug":"方法","link":"#方法","children":[]},{"level":2,"title":"初始化","slug":"初始化","link":"#初始化","children":[]},{"level":2,"title":"指针数组","slug":"指针数组","link":"#指针数组","children":[]},{"level":2,"title":"指向指针的指针","slug":"指向指针的指针","link":"#指向指针的指针","children":[]},{"level":2,"title":"函数参数","slug":"函数参数-1","link":"#函数参数-1","children":[]},{"level":2,"title":"赋值初始化与成员访问","slug":"赋值初始化与成员访问","link":"#赋值初始化与成员访问","children":[]},{"level":2,"title":"结构体指针","slug":"结构体指针","link":"#结构体指针","children":[]},{"level":2,"title":"与面向对象的对比","slug":"与面向对象的对比","link":"#与面向对象的对比","children":[]},{"level":2,"title":"简单使用","slug":"简单使用-1","link":"#简单使用-1","children":[]},{"level":2,"title":"切片截取","slug":"切片截取","link":"#切片截取","children":[]},{"level":2,"title":"常用函数","slug":"常用函数","link":"#常用函数","children":[]},{"level":2,"title":"函数传参","slug":"函数传参","link":"#函数传参","children":[]},{"level":2,"title":"初始化和赋值","slug":"初始化和赋值","link":"#初始化和赋值","children":[]},{"level":2,"title":"常用函数","slug":"常用函数-1","link":"#常用函数-1","children":[]},{"level":2,"title":"基本使用","slug":"基本使用","link":"#基本使用","children":[]},{"level":2,"title":"空接口","slug":"空接口","link":"#空接口","children":[]},{"level":2,"title":"断言","slug":"断言","link":"#断言","children":[]},{"level":2,"title":"goroutine","slug":"goroutine","link":"#goroutine","children":[]},{"level":2,"title":"channel","slug":"channel","link":"#channel","children":[{"level":3,"title":"基本使用","slug":"基本使用-1","link":"#基本使用-1","children":[]},{"level":3,"title":"缓冲区","slug":"缓冲区","link":"#缓冲区","children":[]},{"level":3,"title":"常用函数","slug":"常用函数-2","link":"#常用函数-2","children":[]},{"level":3,"title":"单向通道","slug":"单向通道","link":"#单向通道","children":[]}]},{"level":2,"title":"package","slug":"package","link":"#package","children":[]},{"level":2,"title":"import","slug":"import","link":"#import","children":[{"level":3,"title":"点操作","slug":"点操作","link":"#点操作","children":[]},{"level":3,"title":"下划线","slug":"下划线","link":"#下划线","children":[]}]},{"level":2,"title":"panic","slug":"panic","link":"#panic","children":[]},{"level":2,"title":"recover","slug":"recover","link":"#recover","children":[]}],"readingTime":{"minutes":18.19,"words":5458},"filePathRelative":"开发/Go开发/Go语言基础.md","autoDesc":true}');export{t as comp,v as data};
