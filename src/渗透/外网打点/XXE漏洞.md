@@ -5,6 +5,7 @@ tags:
 关联:
   - "[[book/知识笔记/渗透/外网打点/基础漏洞/基础漏洞]]"
 博客链接: https:/www.cnblogs.com/Ho1dF0rward/p/18364762
+title: XXE漏洞
 ---
 ## 基本概念
 
