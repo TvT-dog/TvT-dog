@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "c54fb056fdb0f165",
+    "type": "split",
+    "children": [
+      {
+        "id": "8bd6771f479a8eb5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "612d2387e13e061e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "渗透/外网打点/XXE漏洞.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "XXE漏洞"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "26545f8b63b5e060",
+    "type": "split",
+    "children": [
+      {
+        "id": "5ff12eecf7dc5b15",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f7f216ae1eb4850e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "2f458e0caf4f3132",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "c2f437e131e8a27d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 369.5
+  },
+  "right": {
+    "id": "26b9b105ecba38eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "05c0b5fbffaf7baa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "70a0f520d932a974",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CTF/JAVA/Think_java题解.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Think_java题解 的反向链接列表"
+            }
+          },
+          {
+            "id": "3e2d0ca6149e9743",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CTF/JAVA/Think_java题解.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Think_java题解 的出链列表"
+            }
+          },
+          {
+            "id": "638a35f30e3a7544",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e3441b13584254e4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "渗透/外网打点/SSRF/SSRF漏洞初识.md"
+              },
+              "icon": "lucide-list",
+              "title": "SSRF漏洞初识 的大纲"
+            }
+          },
+          {
+            "id": "c237b38b2afb55a6",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "612d2387e13e061e",
+  "lastOpenFiles": [
+    "渗透/外网打点/Sqlmap使用.md",
+    "渗透/外网打点/CORS配置错误漏洞.md",
+    "渗透/外网打点/文件上传.md",
+    "渗透/外网打点/命令执行.md",
+    "渗透/外网打点/外网打点.md",
+    "渗透/外网打点/Waf绕过/Waf绕过理论篇.md",
+    "渗透/外网打点/Nginx漏洞/HOST碰撞.md",
+    "渗透/外网打点/Waf绕过/Waf绕过.md",
+    "渗透/外网打点/Nginx漏洞/Nginx漏洞.md",
+    "渗透/外网打点/越权配置/常见绕过.md",
+    "渗透/外网打点/越权配置/越权.md",
+    "渗透/外网打点/业务场景/业务场景.md",
+    "渗透/外网打点/业务场景/后台页面.md",
+    "渗透/外网打点/业务场景/登陆页面.md",
+    "渗透/外网打点/信息收集/谷歌语法.md",
+    "渗透/外网打点/信息收集/信息收集.md",
+    "渗透/外网打点/基础漏洞/基础漏洞.md",
+    "images/20241109182835.png",
+    "渗透/外网打点/Java环境/逻辑漏洞.md",
+    "渗透/外网打点/Java环境/Java-文件上传.md",
+    "渗透/外网打点/Java环境/Java-el表达式.md",
+    "渗透/外网打点/Java环境/Java-SQL注入风险.md",
+    "渗透/外网打点/Java环境/Java-ssrf风险.md",
+    "渗透/外网打点/Java环境/JAVA-Xxe风险.md",
+    "渗透/外网打点/XXE漏洞.md",
+    "渗透/外网打点/XSS/XSS初识.md",
+    "渗透/外网打点/XSS/XSS面试篇.md",
+    "渗透/外网打点/XSS",
+    "渗透/output/attachment",
+    "渗透/output",
+    "images/5dd3edc04b0d1d931aa0f459b0a2a989.png",
+    "渗透/外网打点/SSRF/attachment/5dd3edc04b0d1d931aa0f459b0a2a989.png",
+    "渗透/外网打点/SSRF/attachment",
+    "渗透/外网打点/SSRF",
+    "渗透/外网打点/attachment/5dd3edc04b0d1d931aa0f459b0a2a989.png",
+    "渗透/外网打点/attachment",
+    "渗透/attachment/5dd3edc04b0d1d931aa0f459b0a2a989.png",
+    "渗透/attachment",
+    "images/Pasted image 20240916164832.png",
+    "images/Pasted image 20240916185148.png",
+    "images/03a75ca2813f4aa62266b5c706d7689d.png",
+    "渗透/外网打点/Sql注入",
+    "渗透/外网打点",
+    "渗透/未命名"
+  ]
+}
