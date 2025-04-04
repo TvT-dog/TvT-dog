@@ -31,8 +31,6 @@ jobs:
       - name: 构建 VuePress 站点
         run: pnpm docs:build
 
-      - name: 调试：检查 dist 目录
-        run: ls -la docs/.vuepress
 
       - name: 部署到 GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
