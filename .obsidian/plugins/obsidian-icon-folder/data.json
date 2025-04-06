@@ -1,0 +1,49 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "💸",
+      "LiAlignVerticalDistributeStart",
+      "LiBookTemplate",
+      "LiAxis3d",
+      "LiVideo"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false
+  },
+  "book/知识笔记": "LiBook",
+  "book/电子书": "LiBookOpenText",
+  "book/计划": {
+    "iconName": "LiCalendarX",
+    "iconColor": "#8b9e61"
+  },
+  "book/自媒体": "LiCamera",
+  "book/开源项目": "LiGithub",
+  "book/blog": "LiVideo",
+  "book/案例收集": "LiAxis3d",
+  "book/模板": "LiBookTemplate",
+  "book/副业模式": "💸",
+  "book/临时文档": "LiAlignVerticalDistributeStart"
+}

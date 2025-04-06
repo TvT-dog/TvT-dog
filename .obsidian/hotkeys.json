@@ -1,0 +1,19 @@
+{
+  "obsidian-mind-map:app:markmap-preview": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ]
+}

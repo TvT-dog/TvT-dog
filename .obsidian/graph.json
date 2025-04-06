@@ -1,0 +1,22 @@
+{
+  "collapse-filter": false,
+  "search": "path:book/知识笔记 ",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -1.6,
+  "nodeSizeMultiplier": 0.728251139322917,
+  "lineSizeMultiplier": 0.758357747395833,
+  "collapse-forces": false,
+  "centerStrength": 0.498209635416667,
+  "repelStrength": 11.25,
+  "linkStrength": 0.572550455729167,
+  "linkDistance": 250,
+  "scale": 0.49003112836340706,
+  "close": true
+}

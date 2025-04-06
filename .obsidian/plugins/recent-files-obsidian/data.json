@@ -1,0 +1,128 @@
+{
+  "recentFiles": [
+    {
+      "basename": "输入输出函数",
+      "path": "src/docs/开发/ACM/输入输出函数.md"
+    },
+    {
+      "basename": "2025-04-06",
+      "path": "book/计划/2025-04-06.md"
+    },
+    {
+      "basename": "2025-04-03",
+      "path": "book/计划/2025-04-03.md"
+    },
+    {
+      "basename": "2025-04-02",
+      "path": "book/计划/2025-04-02.md"
+    },
+    {
+      "basename": "2025-04-01",
+      "path": "book/计划/2025-04-01.md"
+    },
+    {
+      "basename": "2025-03-31",
+      "path": "book/计划/2025/3月/2025-03-31.md"
+    },
+    {
+      "basename": "Day_template",
+      "path": "book/模板/Day_template.md"
+    },
+    {
+      "basename": "重点目标",
+      "path": "book/知识笔记/渗透/SRC挖掘/萤石安全/重点目标.md"
+    },
+    {
+      "basename": "工具",
+      "path": "book/知识笔记/渗透/工具/工具.md"
+    },
+    {
+      "basename": "ysoserial使用",
+      "path": "book/知识笔记/渗透/工具/ysoserial使用.md"
+    },
+    {
+      "basename": "外网打点工具概览",
+      "path": "book/知识笔记/渗透/工具/外网打点工具概览.md"
+    },
+    {
+      "basename": "内网",
+      "path": "book/知识笔记/渗透/内网/内网.md"
+    },
+    {
+      "basename": "体系建设",
+      "path": "book/知识笔记/渗透/SRC挖掘/体系建设.md"
+    },
+    {
+      "basename": "外网打点",
+      "path": "book/知识笔记/渗透/外网打点/外网打点.md"
+    },
+    {
+      "basename": "常见端口",
+      "path": "book/知识笔记/渗透/常见端口.md"
+    },
+    {
+      "basename": "好的文章",
+      "path": "book/知识笔记/渗透/好的文章.md"
+    },
+    {
+      "basename": "漏洞靶场",
+      "path": "book/知识笔记/渗透/漏洞靶场.md"
+    },
+    {
+      "basename": "云雾SRC课程",
+      "path": "book/知识笔记/渗透/SRC挖掘/云雾SRC课程/云雾SRC课程.md"
+    },
+    {
+      "basename": "SRC挖掘",
+      "path": "book/知识笔记/渗透/SRC挖掘/SRC挖掘.md"
+    },
+    {
+      "basename": "秋招面试",
+      "path": "book/知识笔记/简历/秋招面试.md"
+    },
+    {
+      "basename": "面试问题",
+      "path": "book/知识笔记/计算机网络/面试问题.md"
+    },
+    {
+      "basename": "软件架构风格",
+      "path": "book/知识笔记/计算机网络/软件架构风格.md"
+    },
+    {
+      "basename": "同源策略与CORS",
+      "path": "book/知识笔记/计算机网络/同源策略与CORS.md"
+    },
+    {
+      "basename": "Http请求",
+      "path": "book/知识笔记/计算机网络/Http请求.md"
+    },
+    {
+      "basename": "Http-only",
+      "path": "book/知识笔记/计算机网络/Http-only.md"
+    },
+    {
+      "basename": "CSP 策略",
+      "path": "book/知识笔记/计算机网络/CSP 策略.md"
+    },
+    {
+      "basename": "计算机网络",
+      "path": "book/知识笔记/计算机网络/计算机网络.md"
+    },
+    {
+      "basename": "秋招",
+      "path": "book/知识笔记/简历/秋招.md"
+    },
+    {
+      "basename": "简历知识点",
+      "path": "book/知识笔记/简历/简历知识点.md"
+    },
+    {
+      "basename": "相关笔记",
+      "path": "book/知识笔记/渗透/SRC挖掘/云雾SRC课程/相关笔记.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}
