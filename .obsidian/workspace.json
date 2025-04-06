@@ -1,0 +1,267 @@
+{
+  "main": {
+    "id": "f4cbcf461a1d9d2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "4c78144a7433ab85",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0893447840196b8d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a3661dbf24938172",
+    "type": "split",
+    "children": [
+      {
+        "id": "94874b8faa5fdcfd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "10c1e4911f58671e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "a730119537201111",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "srf",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "698a8fdba6cbe7fb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "80cff1d5d01ed5a7",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 284.5
+  },
+  "right": {
+    "id": "88eadf333eb9a45f",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e742cedc6592db6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98df5d3e079423d0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "book/计划/2025-02-03.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "2025-02-03 的出链列表"
+            }
+          },
+          {
+            "id": "61aef78426e8431d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "book/计划/2025-02-03.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2025-02-03 的反向链接列表"
+            }
+          },
+          {
+            "id": "450cb7a726fed9c1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "c99102f2eb6392a4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "2d191b3e6dc84086",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "cb411472fd389aae",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "8520f4e4fc37f33f",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 286.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "surfing:surfing-bookmark-manager": false,
+      "obsidian-custom-frames:Open Notion": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "random-note:开始漫游笔记": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "0893447840196b8d",
+  "lastOpenFiles": [
+    "src/docs/开发/ACM/输入输出函数.md",
+    "src/docs/开发/ACM/常用逻辑.md",
+    "book/计划/2025-04-03.md",
+    "book/计划/2025-04-06.md",
+    "book/计划/2025-04-02.md",
+    "book/计划/2025-04-01.md",
+    "book/计划/2025/3月/2025-03-31.md",
+    "book/模板/Day_template.md",
+    "book/计划/2025-03-31.md",
+    "book/计划/2025/3月/2025-03-22.md",
+    "book/计划/2025/3月/2025-03-21.md",
+    "book/计划/2025/3月/2025-03-20.md",
+    "book/计划/2025/3月/2025-03-19.md",
+    "book/计划/2025/3月/2025-03-18.md",
+    "book/计划/2025/3月/2025-03-17.md",
+    "book/计划/2025/3月/2025-03-16.md",
+    "book/计划/2025/3月/2025-03-15.md",
+    "book/计划/2025/3月/2025-03-13.md",
+    "book/计划/2025/3月/2025-03-12.md",
+    "book/计划/2025/3月/2025-03-11.md",
+    "book/计划/2025/3月/2025-03-10.md",
+    "book/计划/2025/3月/2025-03-09.md",
+    "book/计划/2025/3月/2025-03-08.md",
+    "book/计划/2025/3月/2025-03-06.md",
+    "book/计划/2025/3月/2025-03-05.md",
+    "book/计划/2025/3月/2025-03-04.md",
+    "book/计划/2025/3月",
+    "book/计划/2025/2月",
+    "book/计划/2025",
+    "book/知识笔记/渗透/SRC挖掘/萤石安全",
+    "Pasted image 20250321011808.png",
+    "Pasted image 20250319002229.png",
+    "241687d582c90f5bde5749dc9d5a60ae_720.jpg",
+    "images/Pasted image 20250314010901.png",
+    "images/Pasted image 20250314010858.png",
+    "images/Pasted image 20250311005428.png",
+    "d6b03ffa3ca37512adfaae3010babb81_720.jpg",
+    "未命名",
+    "book/副业模式",
+    "book/知识笔记/开发/ACM/GO/数组/分治排序",
+    "book/知识笔记/开发/ACM/GO/数组/简单排序",
+    "book/知识笔记/开发/ACM/树",
+    "book/知识笔记/开发/ACM/【保姆级学习时间线分享】零基础如何入门算法竞赛？ - 知乎 (2024_11_25 13｜23｜15).html",
+    "book/知识笔记/安全研究/71d88aab7de472fe4687f3465d797541.png",
+    "images/Pasted image 20250210221548.png",
+    "images/Pasted image 20250210111906.png",
+    "book/未命名.canvas",
+    "未命名.canvas",
+    "book/开源项目/后端/未命名.canvas",
+    "知识/知识笔记/渗透/渗透概览.canvas"
+  ]
+}
