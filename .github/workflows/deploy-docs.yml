@@ -10,13 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          version: 10.4.0  # 与 package.json 中的版本保持一致
 
       - name: 设置 pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 10.4.0
 
       - name: 设置 Node.js
         uses: actions/setup-node@v4
