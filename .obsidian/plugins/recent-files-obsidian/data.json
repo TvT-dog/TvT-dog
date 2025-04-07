@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "输入输出函数",
-      "path": "src/docs/开发/ACM/输入输出函数.md"
+      "basename": "常用函数",
+      "path": "src/docs/开发/ACM/常用函数.md"
+    },
+    {
+      "basename": "服务架构",
+      "path": "src/docs/开发/服务架构/服务架构.md"
     },
     {
       "basename": "2025-04-06",

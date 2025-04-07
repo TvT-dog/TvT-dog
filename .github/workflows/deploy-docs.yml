@@ -10,23 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: 设置 pnpm
         uses: pnpm/action-setup@v4
-
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: pnpm
-
       - name: 安装依赖
         run: pnpm install
-
       - name: 构建 VuePress 站点
         run: pnpm docs:build
-
-
       - name: 部署到 GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
         with:
