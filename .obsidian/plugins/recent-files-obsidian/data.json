@@ -1,28 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "BM1 反转链表",
-      "path": "src/docs/开发/ACM/牛客面试Top100/BM1 反转链表.md"
-    },
-    {
       "basename": "aboutMe",
       "path": "src/aboutMe.md"
     },
     {
-      "basename": "README",
-      "path": "src/README.md"
+      "basename": "BM1 反转链表",
+      "path": "src/docs/开发/ACM/牛客面试Top100/BM1 反转链表.md"
     },
     {
       "basename": "常用函数",
       "path": "src/docs/开发/ACM/常用函数.md"
     },
     {
-      "basename": "数学概念",
-      "path": "src/docs/开发/ACM/数学概念.md"
+      "basename": "Protobuf",
+      "path": "src/docs/开发/Protobuf.md"
+    },
+    {
+      "basename": "Nginx",
+      "path": "src/docs/开发/Nginx.md"
     },
     {
       "basename": "服务架构",
       "path": "src/docs/开发/服务架构/服务架构.md"
+    },
+    {
+      "basename": "微服务",
+      "path": "src/docs/开发/服务架构/微服务.md"
+    },
+    {
+      "basename": "WEB开发技术演变",
+      "path": "src/docs/开发/服务架构/WEB开发技术演变.md"
+    },
+    {
+      "basename": "一分钱不花,炫酷博客带回家",
+      "path": "src/docs/开发/博客搭建/一分钱不花,炫酷博客带回家.md"
+    },
+    {
+      "basename": "安卓学习",
+      "path": "src/docs/开发/安卓/安卓学习.md"
+    },
+    {
+      "basename": "安卓脱壳",
+      "path": "src/docs/开发/安卓/安卓脱壳.md"
+    },
+    {
+      "basename": "IDA pro使用",
+      "path": "src/docs/开发/安卓/IDA pro使用.md"
+    },
+    {
+      "basename": "frida调试",
+      "path": "src/docs/开发/安卓/frida调试.md"
+    },
+    {
+      "basename": "开发",
+      "path": "src/docs/开发/开发.md"
+    },
+    {
+      "basename": "README",
+      "path": "src/README.md"
     },
     {
       "basename": "2025-04-06",
