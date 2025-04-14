@@ -21,6 +21,11 @@ jobs:
         run: pnpm install
       - name: 构建 VuePress 站点
         run: pnpm docs:build
+      - name: 复制 CNAME 文件到构建目录
+        run: |
+            if [ -f CNAME ]; then
+              cp CNAME src/.vuepress/dist/
+            fi
       - name: 部署到 GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
         with:
