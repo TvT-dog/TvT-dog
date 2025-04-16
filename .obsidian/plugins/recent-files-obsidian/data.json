@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "一分钱不花,炫酷博客带回家",
+      "path": "src/docs/开发/博客搭建/一分钱不花,炫酷博客带回家.md"
+    },
+    {
       "basename": "BM5 合并k个已排序的链表",
       "path": "src/docs/开发/ACM/牛客面试Top100/BM5 合并k个已排序的链表.md"
     },
@@ -27,10 +31,6 @@
     {
       "basename": "aboutMe",
       "path": "src/aboutMe.md"
-    },
-    {
-      "basename": "一分钱不花,炫酷博客带回家",
-      "path": "src/docs/开发/博客搭建/一分钱不花,炫酷博客带回家.md"
     },
     {
       "basename": "开发",
