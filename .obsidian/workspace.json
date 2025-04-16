@@ -216,10 +216,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9d4b3e251490dbe4",
+  "active": "10c1e4911f58671e",
   "lastOpenFiles": [
-    "pnpm-lock.yaml.2492672584",
+    "src/docs/开发/开发.md",
     "src/docs/开发/ACM/牛客面试Top100/BM5 合并k个已排序的链表.md",
+    "src/docs/开发/博客搭建/一分钱不花,炫酷博客带回家.md",
+    "pnpm-lock.yaml.2492672584",
     "src/docs/开发/ACM/牛客面试Top100/BM4 合并两个排序的链表.md",
     "src/docs/开发/ACM/牛客面试Top100/BM2 链表内指定区间反转.md",
     "src/docs/开发/ACM/牛客面试Top100/BM1 反转链表.md",
@@ -244,7 +246,6 @@
     "node_modules/sitemap/node_modules/@types/node/timers",
     "node_modules/sitemap/node_modules/@types/node/stream/web.d.ts",
     "node_modules/sitemap/node_modules/@types/node/stream/promises.d.ts",
-    "node_modules/sitemap/node_modules/@types/node/stream/consumers.d.ts",
     "node_modules/wrap-ansi/node_modules/ansi-regex/readme.md",
     "node_modules/@vuepress/plugin-markdown-ext/node_modules/js-yaml/README.md",
     "node_modules/@vuepress/plugin-markdown-ext/node_modules/js-yaml/CHANGELOG.md",
@@ -255,7 +256,6 @@
     "node_modules/sass-embedded/README.md",
     "node_modules/cliui/node_modules/strip-ansi/readme.md",
     "node_modules/@vuepress/plugin-sass-palette/node_modules/chokidar/README.md",
-    "node_modules/vuepress-plugin-md-enhance/node_modules/js-yaml/README.md",
     "node_modules/vuepress-theme-hope/templates/socialMediaIcons/zhihu.svg",
     "node_modules/vuepress-theme-hope/templates/socialMediaIcons/yy.svg",
     "node_modules/vuepress-theme-hope/templates/socialMediaIcons/youtube.svg",

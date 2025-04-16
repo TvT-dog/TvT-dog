@@ -33,10 +33,6 @@
       "path": "src/aboutMe.md"
     },
     {
-      "basename": "开发",
-      "path": "src/docs/开发/开发.md"
-    },
-    {
       "basename": "README",
       "path": "src/README.md"
     },
