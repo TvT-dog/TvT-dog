@@ -216,11 +216,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "10c1e4911f58671e",
+  "active": "9d4b3e251490dbe4",
   "lastOpenFiles": [
+    "src/docs/开发/ACM/堆.md",
+    "src/docs/开发/ACM/常用函数.md",
+    "src/docs/开发/博客搭建/一分钱不花,炫酷博客带回家.md",
     "src/docs/开发/开发.md",
     "src/docs/开发/ACM/牛客面试Top100/BM5 合并k个已排序的链表.md",
-    "src/docs/开发/博客搭建/一分钱不花,炫酷博客带回家.md",
     "pnpm-lock.yaml.2492672584",
     "src/docs/开发/ACM/牛客面试Top100/BM4 合并两个排序的链表.md",
     "src/docs/开发/ACM/牛客面试Top100/BM2 链表内指定区间反转.md",
@@ -254,8 +256,6 @@
     "node_modules/@babel/helper-string-parser/README.md",
     "node_modules/wrap-ansi/node_modules/string-width/readme.md",
     "node_modules/sass-embedded/README.md",
-    "node_modules/cliui/node_modules/strip-ansi/readme.md",
-    "node_modules/@vuepress/plugin-sass-palette/node_modules/chokidar/README.md",
     "node_modules/vuepress-theme-hope/templates/socialMediaIcons/zhihu.svg",
     "node_modules/vuepress-theme-hope/templates/socialMediaIcons/yy.svg",
     "node_modules/vuepress-theme-hope/templates/socialMediaIcons/youtube.svg",
