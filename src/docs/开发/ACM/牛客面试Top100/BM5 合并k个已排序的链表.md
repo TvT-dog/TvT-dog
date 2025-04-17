@@ -203,10 +203,8 @@ func merger(lists []*ListNode,left int,right int) *ListNode{
 ### 堆排序
 ```go
 package main
-
-import "container/heap"
 import . "nc_tools"
-
+import "container/heap"
 /*
  * type ListNode struct{
  *   Val int
@@ -217,55 +215,64 @@ import . "nc_tools"
 /**
  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
  *
- *
- * @param lists ListNode类一维数组
+ * 
+ * @param lists ListNode类一维数组 
  * @return ListNode类
- */
-type linkHeade []*ListNode
+*/
+type linkHead []*ListNode
+//实现长度
+func (h *linkHead)Len() int{
+	return len(*h)
 
-func mergeKLists(lists []*ListNode) *ListNode {
-	// write code here
-	h := &linkHeade{}
+}
+//实现比较
+func (h *linkHead)Less(i,j int) bool{
+    return (*h)[i].Val<(*h)[j].Val
+}
+//实现交换
+func (h *linkHead)Swap(i,j int){
+	(*h)[i],(*h)[j]=(*h)[j],(*h)[i]
+
+}
+//实现入堆
+func (h *linkHead)Push(x interface{}){
+     *h=append((*h), x.(*ListNode))
+}
+//实现出堆
+func (h *linkHead)Pop()interface{} { 
+	last:=(*h)[len((*h))-1]
+	*h=(*h)[:len((*h))-1]
+	return last
+}
+
+func mergeKLists( lists []*ListNode ) *ListNode {
+	h:=&linkHead{}
 	heap.Init(h)
-	for _,i := range lists {
-		if i != nil {
+    for _,i :=range lists{
+		if i!=nil{
 			heap.Push(h, i)
 		}
 	}
-	head:=&ListNode{Val: 0}
-	headTmp:=head
+
+    var newLinkHead *ListNode
+	var nowNode *ListNode
+    newLinkHead=&ListNode{
+		Val: 0,
+	}
+    nowNode=newLinkHead
+	var tmpNode *ListNode
 	for h.Len()>0{
-        tmp:=heap.Pop(h).(*ListNode)
-		headTmp.Next=tmp
-        headTmp=headTmp.Next
-		if tmp.Next != nil {
-			heap.Push(h, tmp.Next)
+        tmpNode=heap.Pop(h).(*ListNode)
+		nowNode.Next=tmpNode
+		nowNode=nowNode.Next
+		if tmpNode.Next!=nil{
+			heap.Push(h , tmpNode.Next)
 		}
 	}
-	
-	headTmp.Next = nil
-    head=head.Next
-	return head
-
-
+	nowNode.Next=nil
+	newLinkHead=newLinkHead.Next
+	return newLinkHead
 }
 
-func (h linkHeade) Len() int {
-	return len(h)
-}
 
-func (h linkHeade) Less(i int, j int) bool {
-	return (h[i].Val < h[j].Val)
-}
-func (h linkHeade) Swap(i int, j int) {
-	h[i], h[j] = h[j], h[i]
-}
-func (h *linkHeade) Push(x interface{}) {
-	*h = append(*h, x.(*ListNode))
-}
-func (h *linkHeade) Pop() interface{}  {
-	last := (*h)[len(*h)-1]
-	(*h) = (*h)[:len((*h))-1]
-	return last
-}
 ```
