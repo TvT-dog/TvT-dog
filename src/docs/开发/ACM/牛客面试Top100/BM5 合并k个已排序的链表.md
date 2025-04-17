@@ -200,3 +200,72 @@ func merger(lists []*ListNode,left int,right int) *ListNode{
 }
 ```
 其实这里是使用合并排序处理的数组环节，同时考虑到了链表本身是升序的条件。
+### 堆排序
+```go
+package main
+
+import "container/heap"
+import . "nc_tools"
+
+/*
+ * type ListNode struct{
+ *   Val int
+ *   Next *ListNode
+ * }
+ */
+
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ *
+ * @param lists ListNode类一维数组
+ * @return ListNode类
+ */
+type linkHeade []*ListNode
+
+func mergeKLists(lists []*ListNode) *ListNode {
+	// write code here
+	h := &linkHeade{}
+	heap.Init(h)
+	for _,i := range lists {
+		if i != nil {
+			heap.Push(h, i)
+		}
+	}
+	head:=&ListNode{Val: 0}
+	headTmp:=head
+	for h.Len()>0{
+        tmp:=heap.Pop(h).(*ListNode)
+		headTmp.Next=tmp
+        headTmp=headTmp.Next
+		if tmp.Next != nil {
+			heap.Push(h, tmp.Next)
+		}
+	}
+	
+	headTmp.Next = nil
+    head=head.Next
+	return head
+
+
+}
+
+func (h linkHeade) Len() int {
+	return len(h)
+}
+
+func (h linkHeade) Less(i int, j int) bool {
+	return (h[i].Val < h[j].Val)
+}
+func (h linkHeade) Swap(i int, j int) {
+	h[i], h[j] = h[j], h[i]
+}
+func (h *linkHeade) Push(x interface{}) {
+	*h = append(*h, x.(*ListNode))
+}
+func (h *linkHeade) Pop() interface{}  {
+	last := (*h)[len(*h)-1]
+	(*h) = (*h)[:len((*h))-1]
+	return last
+}
+```

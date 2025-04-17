@@ -1,12 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "一分钱不花,炫酷博客带回家",
-      "path": "src/docs/开发/博客搭建/一分钱不花,炫酷博客带回家.md"
-    },
-    {
-      "basename": "堆",
-      "path": "src/docs/开发/ACM/堆.md"
+      "basename": "结构体",
+      "path": "src/docs/开发/Go/结构体.md"
     },
     {
       "basename": "常用函数",
@@ -15,6 +11,14 @@
     {
       "basename": "BM5 合并k个已排序的链表",
       "path": "src/docs/开发/ACM/牛客面试Top100/BM5 合并k个已排序的链表.md"
+    },
+    {
+      "basename": "一分钱不花,炫酷博客带回家",
+      "path": "src/docs/开发/博客搭建/一分钱不花,炫酷博客带回家.md"
+    },
+    {
+      "basename": "堆",
+      "path": "src/docs/开发/ACM/堆.md"
     },
     {
       "basename": "BM4 合并两个排序的链表",
