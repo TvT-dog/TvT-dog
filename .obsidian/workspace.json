@@ -13,24 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/docs/开发/ACM/牛客面试Top100/BM10 两个链表的第一个公共结点.md",
+                "file": "src/docs/开发/ACM/牛客面试Top100/未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BM10 两个链表的第一个公共结点"
-            }
-          },
-          {
-            "id": "4c4de110418ddcd3",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-04-17 17.42.49.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-04-17 17.42.49.excalidraw"
+              "title": "未命名"
             }
           }
         ]
@@ -65,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "srf",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,23 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/docs/开发/ACM/牛客面试Top100/BM10 两个链表的第一个公共结点.md",
+                "file": "src/docs/开发/ACM/牛客面试Top100/未命名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "BM10 两个链表的第一个公共结点 的大纲"
-            }
-          },
-          {
-            "id": "2d191b3e6dc84086",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "title": "未命名 的大纲"
             }
           },
           {
@@ -206,7 +184,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -221,7 +199,6 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "random-note:开始漫游笔记": false,
-      "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "obsidian-custom-frames:Open Notion": false,
       "surfing:surfing-bookmark-manager": false,
@@ -230,14 +207,18 @@
   },
   "active": "9d4b3e251490dbe4",
   "lastOpenFiles": [
+    "src/docs/开发/ACM/牛客面试Top100/BM10 两个链表的第一个公共结点.md",
+    "src/docs/开发/ACM/牛客面试Top100/未命名.md",
+    "src/docs/开发/ACM/牛客面试Top100/BM1 反转链表.md",
+    "src/docs/开发/ACM/牛客面试Top100/BM5 合并k个已排序的链表.md",
+    "src/docs/开发/ACM/牛客面试Top100/BM7 链表中环的入口结点.md",
+    "src/docs/英语学习/背诵范文.md",
+    "src/docs/英语学习",
+    "Excalidraw/Drawing 2025-04-17 17.42.49.excalidraw.md",
     "src/docs/开发/ACM/牛客面试Top100/BM8 链表中倒数最后k个结点.md",
     "src/docs/开发/ACM/牛客面试Top100/BM6 判断链表中是否有环.md",
-    "src/docs/开发/ACM/牛客面试Top100/BM10 两个链表的第一个公共结点.md",
-    "Excalidraw/Drawing 2025-04-17 17.42.49.excalidraw.md",
     "Excalidraw",
-    "src/docs/开发/ACM/牛客面试Top100/BM7 链表中环的入口结点.md",
     "src/docs/开发/ACM/牛客面试Top100/BM6 判断链表中是否有环.md~",
-    "src/docs/开发/ACM/牛客面试Top100/BM5 合并k个已排序的链表.md",
     "src/docs/开发/Go/面向对象.md",
     "src/docs/开发/ACM/常用函数.md",
     "src/docs/开发/Go",
@@ -247,7 +228,6 @@
     "pnpm-lock.yaml.2492672584",
     "src/docs/开发/ACM/牛客面试Top100/BM4 合并两个排序的链表.md",
     "src/docs/开发/ACM/牛客面试Top100/BM2 链表内指定区间反转.md",
-    "src/docs/开发/ACM/牛客面试Top100/BM1 反转链表.md",
     "src/docs/开发/ACM/牛客面试Top100/img_1.png",
     "src/docs/开发/ACM/牛客面试Top100/img.png",
     "src/docs/开发/安卓/Xpose框架使用.md",
@@ -265,9 +245,6 @@
     "node_modules/vue/package.json",
     "node_modules/vue/README.md",
     "node_modules/vuepress-theme-hope/README.md",
-    "node_modules/sitemap/node_modules/@types/node/timers/promises.d.ts",
-    "node_modules/wrap-ansi/node_modules/ansi-regex/readme.md",
-    "node_modules/@vuepress/plugin-markdown-ext/node_modules/js-yaml/README.md",
     "node_modules/vuepress-theme-hope/templates/socialMediaIcons/zhihu.svg",
     "node_modules/vuepress-theme-hope/templates/socialMediaIcons/yy.svg",
     "node_modules/vuepress-theme-hope/templates/socialMediaIcons/youtube.svg",
