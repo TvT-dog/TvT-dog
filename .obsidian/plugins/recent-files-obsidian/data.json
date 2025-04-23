@@ -1,44 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "BM14 链表的奇偶重排",
-      "path": "src/docs/开发/ACM/牛客面试Top100/BM14 链表的奇偶重排.md"
-    },
-    {
-      "basename": "BM13 判断一个链表是否为回文结构",
-      "path": "src/docs/开发/ACM/牛客面试Top100/BM13 判断一个链表是否为回文结构.md"
-    },
-    {
-      "basename": "BM12 单链表的排序",
-      "path": "src/docs/开发/ACM/牛客面试Top100/BM12 单链表的排序.md"
-    },
-    {
-      "basename": "BM10 两个链表的第一个公共结点",
-      "path": "src/docs/开发/ACM/牛客面试Top100/BM10 两个链表的第一个公共结点.md"
-    },
-    {
-      "basename": "BM1 反转链表",
-      "path": "src/docs/开发/ACM/牛客面试Top100/BM1 反转链表.md"
-    },
-    {
-      "basename": "BM5 合并k个已排序的链表",
-      "path": "src/docs/开发/ACM/牛客面试Top100/BM5 合并k个已排序的链表.md"
-    },
-    {
-      "basename": "BM7 链表中环的入口结点",
-      "path": "src/docs/开发/ACM/牛客面试Top100/BM7 链表中环的入口结点.md"
-    },
-    {
       "basename": "Drawing 2025-04-17 17.42.49.excalidraw",
       "path": "Excalidraw/Drawing 2025-04-17 17.42.49.excalidraw.md"
-    },
-    {
-      "basename": "BM8 链表中倒数最后k个结点",
-      "path": "src/docs/开发/ACM/牛客面试Top100/BM8 链表中倒数最后k个结点.md"
-    },
-    {
-      "basename": "BM6 判断链表中是否有环",
-      "path": "src/docs/开发/ACM/牛客面试Top100/BM6 判断链表中是否有环.md"
     },
     {
       "basename": "面向对象",
@@ -55,14 +19,6 @@
     {
       "basename": "堆",
       "path": "src/docs/开发/ACM/堆.md"
-    },
-    {
-      "basename": "BM4 合并两个排序的链表",
-      "path": "src/docs/开发/ACM/牛客面试Top100/BM4 合并两个排序的链表.md"
-    },
-    {
-      "basename": "BM2 链表内指定区间反转",
-      "path": "src/docs/开发/ACM/牛客面试Top100/BM2 链表内指定区间反转.md"
     },
     {
       "basename": "README",
