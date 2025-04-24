@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "BM16 删除有序链表中重复的元素-II",
+      "path": "src/docs/开发/ACM/牛客面试Top100/链表/BM16 删除有序链表中重复的元素-II.md"
+    },
+    {
+      "basename": "BM15 删除有序链表中重复的元素-I",
+      "path": "src/docs/开发/ACM/牛客面试Top100/链表/BM15 删除有序链表中重复的元素-I.md"
+    },
+    {
+      "basename": "常用函数",
+      "path": "src/docs/开发/ACM/常用函数.md"
+    },
+    {
+      "basename": "堆",
+      "path": "src/docs/开发/ACM/堆.md"
+    },
+    {
       "basename": "Drawing 2025-04-17 17.42.49.excalidraw",
       "path": "Excalidraw/Drawing 2025-04-17 17.42.49.excalidraw.md"
     },
@@ -9,16 +25,8 @@
       "path": "src/docs/开发/Go/面向对象.md"
     },
     {
-      "basename": "常用函数",
-      "path": "src/docs/开发/ACM/常用函数.md"
-    },
-    {
       "basename": "一分钱不花,炫酷博客带回家",
       "path": "src/docs/开发/博客搭建/一分钱不花,炫酷博客带回家.md"
-    },
-    {
-      "basename": "堆",
-      "path": "src/docs/开发/ACM/堆.md"
     },
     {
       "basename": "README",
