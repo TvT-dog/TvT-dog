@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "gin框架路由学习",
+      "path": "src/docs/开发/Go/框架学习/gin框架路由学习.md"
+    },
+    {
       "basename": "BM16 删除有序链表中重复的元素-II",
       "path": "src/docs/开发/ACM/牛客面试Top100/链表/BM16 删除有序链表中重复的元素-II.md"
     },
