@@ -1,0 +1,16 @@
+{
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "absolute",
+  "attachmentFolderPath": "/",
+  "promptDelete": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "images",
+  "showUnsupportedFiles": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A5",
+    "landscape": false,
+    "margin": "1",
+    "downscalePercent": 50
+  }
+}
