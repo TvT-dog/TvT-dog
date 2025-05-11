@@ -1,57 +1,35 @@
-name: Deploy to GitHub Pages
+name: docss
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  build:
-    name: Build Docusaurus with pnpm
+  docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: 设置 pnpm
+        uses: pnpm/action-setup@v4
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
         with:
-          fetch-depth: 0
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: 'pnpm'
-
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
-
-
-      - name: Verify pnpm installation
+          node-version: 22
+          cache: pnpm
+      - name: 安装依赖
+        run: pnpm install
+      - name: 构建  站点
+        run: pnpm run build
+      - name: 复制 CNAME 文件到构建目录
         run: |
-          which pnpm
-          pnpm --version
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build website
-        run: pnpm build
-
-      - name: Upload Build Artifact
-        uses: actions/upload-pages-artifact@v3
+          if [ -f CNAME ]; then
+            cp CNAME ./build
+          fi
+      - name: 部署到 GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
         with:
-          path: build
-
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          target_branch: gh-pages
+          build_dir: ./build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
