@@ -17,21 +17,29 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: 'pnpm'  # 使用pnpm缓存
+          cache: 'pnpm'
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+          run_install: false
+
+      - name: Verify pnpm installation
+        run: |
+          which pnpm
+          pnpm --version
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile  # 使用pnpm安装依赖
+        run: pnpm install --frozen-lockfile
 
       - name: Build website
-        run: pnpm build  # 使用pnpm执行构建命令
+        run: pnpm build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build  # 上传构建结果
+          path: build
 
   deploy:
     name: Deploy to GitHub Pages
