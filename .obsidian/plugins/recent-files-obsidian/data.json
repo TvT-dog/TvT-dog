@@ -1,6 +1,82 @@
 {
   "recentFiles": [
     {
+      "basename": "docusaurus使用",
+      "path": "docs/开发/博客搭建/docusaurus使用.md"
+    },
+    {
+      "basename": "面向对象",
+      "path": "docs/开发/后端/Go/面向对象.md"
+    },
+    {
+      "basename": "Hertz",
+      "path": "docs/开发/后端/Go/框架学习/Hertz.md"
+    },
+    {
+      "basename": "Git学习",
+      "path": "docs/开发/其他杂项/Git学习.md"
+    },
+    {
+      "basename": "GORM框架学习",
+      "path": "docs/开发/后端/Go/框架学习/GORM框架学习.md"
+    },
+    {
+      "basename": "gin框架路由学习",
+      "path": "docs/开发/后端/Go/框架学习/gin框架路由学习.md"
+    },
+    {
+      "basename": "环境配置",
+      "path": "docs/开发/后端/Go/环境配置.md"
+    },
+    {
+      "basename": "堆",
+      "path": "docs/开发/ACM/堆.md"
+    },
+    {
+      "basename": "BM1 反转链表",
+      "path": "docs/开发/ACM/牛客面试Top100/链表/BM1 反转链表.md"
+    },
+    {
+      "basename": "BM2 链表内指定区间反转",
+      "path": "docs/开发/ACM/牛客面试Top100/链表/BM2 链表内指定区间反转.md"
+    },
+    {
+      "basename": "BM16 删除有序链表中重复的元素-II",
+      "path": "docs/开发/ACM/牛客面试Top100/链表/BM16 删除有序链表中重复的元素-II.md"
+    },
+    {
+      "basename": "BM4 合并两个排序的链表",
+      "path": "docs/开发/ACM/牛客面试Top100/链表/BM4 合并两个排序的链表.md"
+    },
+    {
+      "basename": "BM6 判断链表中是否有环",
+      "path": "docs/开发/ACM/牛客面试Top100/链表/BM6 判断链表中是否有环.md"
+    },
+    {
+      "basename": "BM8 链表中倒数最后k个结点",
+      "path": "docs/开发/ACM/牛客面试Top100/链表/BM8 链表中倒数最后k个结点.md"
+    },
+    {
+      "basename": "BM10 两个链表的第一个公共结点",
+      "path": "docs/开发/ACM/牛客面试Top100/链表/BM10 两个链表的第一个公共结点.md"
+    },
+    {
+      "basename": "BM12 单链表的排序",
+      "path": "docs/开发/ACM/牛客面试Top100/链表/BM12 单链表的排序.md"
+    },
+    {
+      "basename": "BM13 判断一个链表是否为回文结构",
+      "path": "docs/开发/ACM/牛客面试Top100/链表/BM13 判断一个链表是否为回文结构.md"
+    },
+    {
+      "basename": "BM14 链表的奇偶重排",
+      "path": "docs/开发/ACM/牛客面试Top100/链表/BM14 链表的奇偶重排.md"
+    },
+    {
+      "basename": "BM15 删除有序链表中重复的元素-I",
+      "path": "docs/开发/ACM/牛客面试Top100/链表/BM15 删除有序链表中重复的元素-I.md"
+    },
+    {
       "basename": "aboutMe",
       "path": "src/aboutMe.md"
     },
@@ -119,74 +195,6 @@
     {
       "basename": "内网",
       "path": "book/知识笔记/渗透/内网/内网.md"
-    },
-    {
-      "basename": "体系建设",
-      "path": "book/知识笔记/渗透/SRC挖掘/体系建设.md"
-    },
-    {
-      "basename": "外网打点",
-      "path": "book/知识笔记/渗透/外网打点/外网打点.md"
-    },
-    {
-      "basename": "常见端口",
-      "path": "book/知识笔记/渗透/常见端口.md"
-    },
-    {
-      "basename": "好的文章",
-      "path": "book/知识笔记/渗透/好的文章.md"
-    },
-    {
-      "basename": "漏洞靶场",
-      "path": "book/知识笔记/渗透/漏洞靶场.md"
-    },
-    {
-      "basename": "云雾SRC课程",
-      "path": "book/知识笔记/渗透/SRC挖掘/云雾SRC课程/云雾SRC课程.md"
-    },
-    {
-      "basename": "SRC挖掘",
-      "path": "book/知识笔记/渗透/SRC挖掘/SRC挖掘.md"
-    },
-    {
-      "basename": "秋招面试",
-      "path": "book/知识笔记/简历/秋招面试.md"
-    },
-    {
-      "basename": "面试问题",
-      "path": "book/知识笔记/计算机网络/面试问题.md"
-    },
-    {
-      "basename": "软件架构风格",
-      "path": "book/知识笔记/计算机网络/软件架构风格.md"
-    },
-    {
-      "basename": "同源策略与CORS",
-      "path": "book/知识笔记/计算机网络/同源策略与CORS.md"
-    },
-    {
-      "basename": "Http请求",
-      "path": "book/知识笔记/计算机网络/Http请求.md"
-    },
-    {
-      "basename": "Http-only",
-      "path": "book/知识笔记/计算机网络/Http-only.md"
-    },
-    {
-      "basename": "CSP 策略",
-      "path": "book/知识笔记/计算机网络/CSP 策略.md"
-    },
-    {
-      "basename": "计算机网络",
-      "path": "book/知识笔记/计算机网络/计算机网络.md"
-    },
-    {
-      "basename": "秋招",
-      "path": "book/知识笔记/简历/秋招.md"
-    },
-    {
-      "basename": "简历知识点",
-      "path": "book/知识笔记/简历/简历知识点.md"
     }
   ],
   "omittedPaths": [],

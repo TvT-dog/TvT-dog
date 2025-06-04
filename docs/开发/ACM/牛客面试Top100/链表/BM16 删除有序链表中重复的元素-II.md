@@ -58,3 +58,53 @@ func deleteDuplicates(head *ListNode) *ListNode {
 }
 ```
 但最后还是由于边界条件过于复杂，最后难以实现。
+最后看了一下官方答案的实现
+```go
+package main
+
+import (
+	. "nc_tools"
+)
+
+/*
+ * type ListNode struct{
+ *   Val int
+ *   Next *ListNode
+ * }
+ */
+
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ *
+ * @param head ListNode类
+ * @return ListNode类
+ */
+func deleteDuplicates(head *ListNode) *ListNode {
+	if head == nil {
+		return nil
+	}
+	if head.Next == nil {
+		return head
+	}
+	dummy := &ListNode{Val: 0, Next: head}
+	pre := dummy
+	cur := head
+
+	for cur != nil {
+		// 跳过重复节点
+		for cur.Next != nil && cur.Val == cur.Next.Val {
+			cur = cur.Next
+		}
+		if pre.Next == cur {
+			// 没有重复节点，移动 pre 指针
+			pre = pre.Next
+		} else {
+			// 有重复节点，跳过重复节点
+			pre.Next = cur.Next
+		}
+		cur = cur.Next
+	}
+	return dummy.Next
+}
+```

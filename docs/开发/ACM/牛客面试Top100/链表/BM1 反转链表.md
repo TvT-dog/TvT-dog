@@ -19,7 +19,7 @@ type Anode struct {
     data     int  
     nextNode *Anode  
 }  
-  
+
 func main() {  
     var input string  
     var newLink *Anode  
@@ -27,6 +27,8 @@ func main() {
     newLink = reserve(toLinkNode(input))  
     outPrint(newLink)  
 }  
+
+//核心转换逻辑
 func reserve(head *Anode) *Anode {  
     if head == nil {  
        return head  
@@ -42,7 +44,7 @@ func reserve(head *Anode) *Anode {
     }  
     return preNode  
 }  
-  
+
 func outPrint(linkHead *Anode) {  
     if linkHead == nil {  
        fmt.Println("{}")  
