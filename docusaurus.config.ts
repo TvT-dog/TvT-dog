@@ -89,7 +89,7 @@ const config: Config = {
       title: '首页',
       items: [
         {
-          type: 'docSidebar',
+          to:'/docs/开发/文档介绍',
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: '文档',
