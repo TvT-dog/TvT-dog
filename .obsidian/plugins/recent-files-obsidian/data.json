@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "yakit插件开发",
+      "path": "docs/安全/开发/yakit插件开发.md"
+    },
+    {
+      "basename": "快速开始",
+      "path": "docs/开发/后端/Javascript/快速开始.md"
+    },
+    {
+      "basename": "大学4年复盘",
+      "path": "docs/开发/其他杂项/大学4年复盘.md"
+    },
+    {
+      "basename": "基础入门",
+      "path": "docs/开发/后端/faas/基础入门.md"
+    },
+    {
+      "basename": "面向对象",
+      "path": "docs/开发/后端/Go/面向对象.md"
+    },
+    {
+      "basename": "环境配置",
+      "path": "docs/开发/后端/Go/环境配置.md"
+    },
+    {
+      "basename": "Git学习",
+      "path": "docs/开发/其他杂项/Git学习.md"
+    },
+    {
+      "basename": "docusaurus使用",
+      "path": "docs/开发/博客搭建/docusaurus使用.md"
+    },
+    {
+      "basename": "一分钱不花,炫酷博客带回家",
+      "path": "docs/开发/博客搭建/一分钱不花,炫酷博客带回家.md"
+    },
+    {
+      "basename": "博客优化改造",
+      "path": "docs/开发/博客搭建/博客优化改造.md"
+    },
+    {
       "basename": "文档介绍",
       "path": "docs/开发/文档介绍.md"
     },
@@ -13,20 +53,8 @@
       "path": "docs/开发/ACM/堆.md"
     },
     {
-      "basename": "docusaurus使用",
-      "path": "docs/开发/博客搭建/docusaurus使用.md"
-    },
-    {
-      "basename": "面向对象",
-      "path": "docs/开发/后端/Go/面向对象.md"
-    },
-    {
       "basename": "Hertz",
       "path": "docs/开发/后端/Go/框架学习/Hertz.md"
-    },
-    {
-      "basename": "Git学习",
-      "path": "docs/开发/其他杂项/Git学习.md"
     },
     {
       "basename": "GORM框架学习",
@@ -35,10 +63,6 @@
     {
       "basename": "gin框架路由学习",
       "path": "docs/开发/后端/Go/框架学习/gin框架路由学习.md"
-    },
-    {
-      "basename": "环境配置",
-      "path": "docs/开发/后端/Go/环境配置.md"
     },
     {
       "basename": "BM1 反转链表",
@@ -175,30 +199,6 @@
     {
       "basename": "2025-04-01",
       "path": "book/计划/2025-04-01.md"
-    },
-    {
-      "basename": "2025-03-31",
-      "path": "book/计划/2025/3月/2025-03-31.md"
-    },
-    {
-      "basename": "Day_template",
-      "path": "book/模板/Day_template.md"
-    },
-    {
-      "basename": "重点目标",
-      "path": "book/知识笔记/渗透/SRC挖掘/萤石安全/重点目标.md"
-    },
-    {
-      "basename": "工具",
-      "path": "book/知识笔记/渗透/工具/工具.md"
-    },
-    {
-      "basename": "ysoserial使用",
-      "path": "book/知识笔记/渗透/工具/ysoserial使用.md"
-    },
-    {
-      "basename": "外网打点工具概览",
-      "path": "book/知识笔记/渗透/工具/外网打点工具概览.md"
     }
   ],
   "omittedPaths": [],

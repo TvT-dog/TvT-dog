@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "f4cbcf461a1d9d2e",
+    "id": "e3e349d40ebafe04",
     "type": "split",
     "children": [
       {
-        "id": "9888281f96174aed",
+        "id": "f19f4481685b42da",
         "type": "tabs",
         "children": [
           {
-            "id": "cb88fde1e5d02a1d",
+            "id": "bdaabdd05961a82f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/开发/文档介绍.md",
+                "file": "docs/安全/开发/yakit插件开发.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "文档介绍"
+              "title": "yakit插件开发"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a3661dbf24938172",
+    "id": "2d0b7e6d536e0407",
     "type": "split",
     "children": [
       {
-        "id": "94874b8faa5fdcfd",
+        "id": "ffe6ceb7c7ab55ee",
         "type": "tabs",
         "children": [
           {
-            "id": "10c1e4911f58671e",
+            "id": "c74ed65194c0f2a5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "a730119537201111",
+            "id": "dc9bd007b8ea5868",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "698a8fdba6cbe7fb",
+            "id": "57b8635ecd5025a3",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -73,52 +73,28 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
-          },
-          {
-            "id": "80cff1d5d01ed5a7",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 284.5
+    "width": 300
   },
   "right": {
-    "id": "88eadf333eb9a45f",
+    "id": "f6b9c1a43e4d6b62",
     "type": "split",
     "children": [
       {
-        "id": "9e742cedc6592db6",
+        "id": "8ae581a02bbd3a3f",
         "type": "tabs",
         "children": [
           {
-            "id": "98df5d3e079423d0",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "book/计划/2025-02-03.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": false
-              },
-              "icon": "links-going-out",
-              "title": "2025-02-03 的出链列表"
-            }
-          },
-          {
-            "id": "61aef78426e8431d",
+            "id": "d72aa34d6c1d7294",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "book/计划/2025-02-03.md",
+                "file": "docs/开发/后端/faas/基础入门.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,39 +104,40 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025-02-03 的反向链接列表"
+              "title": "基础入门 的反向链接列表"
             }
           },
           {
-            "id": "450cb7a726fed9c1",
+            "id": "b6f99e5ff5f3896c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/开发/后端/faas/基础入门.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "基础入门 的出链列表"
+            }
+          },
+          {
+            "id": "c3704e597e831473",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "标签"
             }
           },
           {
-            "id": "c99102f2eb6392a4",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "docs/开发/文档介绍.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "文档介绍 的大纲"
-            }
-          },
-          {
-            "id": "cb411472fd389aae",
+            "id": "86c67fe775d14226",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -174,21 +151,36 @@
             }
           },
           {
-            "id": "8520f4e4fc37f33f",
+            "id": "f9b31199df68f1fc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/安全/开发/yakit插件开发.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "yakit插件开发 的大纲"
+            }
+          },
+          {
+            "id": "6be3c33fe81d44e7",
             "type": "leaf",
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 231.5
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -205,57 +197,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "cb88fde1e5d02a1d",
+  "active": "bdaabdd05961a82f",
   "lastOpenFiles": [
-    "docs/开发/ACM/常用函数.md",
-    "docs/开发/文档介绍.md",
-    "docs/开发/文档介绍",
-    "docs/开发/ACM/堆.md",
-    "未命名.md",
-    "docs/开发/博客搭建/docusaurus使用.md",
-    "docs/狗蛋的大学总结.md",
-    "docs/开发/后端/Go/面向对象.md",
-    "docs/开发/后端/Go/框架学习/Hertz.md",
-    "docs/开发/其他杂项/Git学习.md",
-    "Pasted image 20250603145811.png",
-    "docs/开发/后端/Go/框架学习/GORM框架学习.md",
-    "docs/开发/其他杂项",
-    "docs/开发/后端/Go/框架学习/gin框架路由学习.md",
-    "docs/开发/后端/Go/环境配置.md",
-    "docs/开发/ACM/牛客面试Top100/链表/BM1 反转链表.md",
-    "docs/开发/ACM/牛客面试Top100/链表/BM2 链表内指定区间反转.md",
-    "docs/开发/ACM/牛客面试Top100/链表/BM16 删除有序链表中重复的元素-II.md",
-    "docs/开发/ACM/牛客面试Top100/链表/BM4 合并两个排序的链表.md",
-    "docs/开发/ACM/牛客面试Top100/链表/BM6 判断链表中是否有环.md",
-    "docs/开发/ACM/牛客面试Top100/链表/BM8 链表中倒数最后k个结点.md",
-    "docs/开发/ACM/牛客面试Top100/链表/BM10 两个链表的第一个公共结点.md",
-    "docs/开发/ACM/牛客面试Top100/链表/BM12 单链表的排序.md",
-    "docs/开发/ACM/牛客面试Top100/链表/BM13 判断一个链表是否为回文结构.md",
-    "docs/开发/ACM/牛客面试Top100/链表/BM14 链表的奇偶重排.md",
-    "docs/开发/ACM/牛客面试Top100/链表/BM15 删除有序链表中重复的元素-I.md",
-    "docs/开发/博客搭建/博客优化改造.md",
-    "docs/开发/前端/react/React组件.md",
-    "docs/开发/前端/react/React交互.md",
-    "docs/开发/前端/react",
-    "docs/开发/前端",
-    "docs/开发/后端/Go/框架学习",
-    "docs/开发/后端/Go",
-    "docs/开发/后端",
-    "src/docs/开发_副本/ACM/牛客面试Top100/链表",
-    "src/docs/开发_副本/ACM/牛客面试Top100",
-    "src/docs/开发_副本/ACM",
-    "未命名.canvas",
-    "src/docs/开发/ACM/牛客面试Top100/img_1.png",
-    "src/docs/开发/ACM/牛客面试Top100/img.png",
-    "node_modules/vuepress-theme-hope/templates/socialMediaIcons/zhihu.svg",
-    "node_modules/vuepress-theme-hope/templates/socialMediaIcons/yy.svg",
-    "node_modules/vuepress-theme-hope/templates/socialMediaIcons/youtube.svg",
-    "node_modules/vuepress-theme-hope/templates/socialMediaIcons/youku.svg",
-    "node_modules/vuepress-theme-hope/templates/socialMediaIcons/ximalaya.svg",
-    "node_modules/vuepress-theme-hope/templates/socialMediaIcons/xiaohongshu.svg",
-    "node_modules/vuepress-theme-hope/templates/socialMediaIcons/whatsapp.svg",
-    "book/未命名.canvas",
-    "book/开源项目/后端/未命名.canvas",
-    "知识/知识笔记/渗透/渗透概览.canvas"
+    "docs/开发/后端/Javascript/快速开始.md",
+    "docs/安全/开发/yakit插件开发.md",
+    "docs/安全/开发",
+    "docs/安全",
+    "docs/开发/其他杂项/大学4年复盘.md",
+    "docs/开发/后端/Javascript",
+    "docs/开发/后端/faas/基础入门.md",
+    "docs/开发/后端/faas"
   ]
 }
